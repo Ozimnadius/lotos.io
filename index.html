@@ -7,52 +7,1284 @@
     <title>Portfolio | Главная</title>
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Для изменений после верстки-->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <nav class="nav">
-          <div class="nav__item">Page1</div>
-          <div class="nav__item">Page2</div>
-          <div class="nav__item">Page3</div>
-        </nav>
+        <div class="container">
+          <div class="header__top">
+            <div class="header__col"><a class="logo" href="/"><img class="logo__img" src="images/icons/logo.png" alt="lorem"/></a></div>
+            <div class="header__col">
+              <div class="time">
+                <div class="time__title">График работы</div>
+                <div class="time__val">Пн-Пт: с 09:00 до 20:00</div>
+              </div>
+            </div>
+            <div class="header__col">
+              <div class="header__tel"><a class="tel" href="tel:8(495)740-24-87"><span class="tel__val">8 (495) 740-24-87</span></a></div>
+              <div class="header__socials">
+                <div class="socials"><a class="socials__item" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="#f2c94c" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16z"/>
+                        <path fill="#fff" d="M23.792 9.205L20.936 23.61s-.4 1-1.5.519l-6.594-5.057-2.4-1.156-4.037-1.356s-.619-.219-.681-.7c-.063-.481.7-.738.7-.738l16.05-6.293c0-.007 1.318-.588 1.318.375z"/>
+                        <path fill="#ffe28b" d="M12.328 23.448s-.194-.02-.432-.775c-.237-.757-1.456-4.757-1.456-4.757l9.694-6.156s.562-.337.537 0c0 0 .1.063-.2.338-.3.28-7.612 6.856-7.612 6.856"/>
+                        <path fill="#ffe28b" d="M15.361 21.011l-2.606 2.382s-.206.156-.425.056l.5-4.419"/>
+                    </svg></a><a class="socials__item" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="#fff" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
+                        <path fill="#f2c94c"
+                              d="M17.85 11.191c.623.133 1.1.37 1.508.751.526.496.813 1.096.94 1.958.085.562.05.783-.149.967-.186.17-.531.176-.74.015-.152-.113-.2-.233-.234-.559-.041-.432-.117-.735-.247-1.016-.278-.597-.768-.907-1.597-1.008-.389-.047-.506-.091-.632-.24a.588.588 0 0 1 .177-.884c.12-.06.17-.066.436-.05.165.009.408.038.538.066zm-.674-2.384c1.92.28 3.407 1.171 4.38 2.617a6.272 6.272 0 0 1 1.006 2.798c.041.376.041 1.061-.003 1.175a.72.72 0 0 1-.288.312c-.123.064-.385.057-.53-.019-.244-.123-.317-.319-.317-.849 0-.818-.212-1.68-.579-2.35a4.804 4.804 0 0 0-1.765-1.834c-.635-.38-1.575-.66-2.432-.73-.31-.025-.48-.088-.597-.224a.575.575 0 0 1-.048-.714c.164-.255.417-.296 1.173-.182zM9.73 6.858c.11.039.281.127.379.19.6.398 2.274 2.536 2.821 3.603.313.61.417 1.061.32 1.396-.102.36-.27.55-1.019 1.152-.3.243-.582.493-.626.56-.114.163-.206.485-.206.713.003.527.345 1.484.794 2.22.348.571.97 1.304 1.587 1.866.725.663 1.363 1.115 2.085 1.472.926.46 1.492.577 1.907.385.104-.048.215-.11.25-.139.031-.029.275-.325.54-.654.512-.644.63-.748.98-.868.447-.152.902-.11 1.36.123.349.18 1.108.65 1.598.991.645.452 2.024 1.576 2.21 1.8.33.405.386.922.165 1.494-.234.603-1.145 1.734-1.78 2.217-.576.436-.984.603-1.522.628-.443.022-.626-.016-1.192-.25-4.44-1.828-7.985-4.556-10.8-8.304-1.47-1.958-2.59-3.989-3.356-6.095-.446-1.228-.468-1.762-.1-2.39.157-.266.831-.922 1.321-1.289.816-.606 1.192-.83 1.493-.893.205-.045.563-.01.79.072zm7.23-.34a8.816 8.816 0 0 1 2.931.868c.949.464 1.556.903 2.36 1.702.752.755 1.17 1.326 1.612 2.214.617 1.237.968 2.709 1.028 4.329.022.552.006.676-.12.834-.24.306-.769.255-.949-.089-.057-.114-.073-.211-.092-.654a11.449 11.449 0 0 0-.174-1.642c-.373-2.055-1.36-3.697-2.935-4.875-1.312-.986-2.669-1.466-4.446-1.57-.601-.035-.705-.057-.841-.161-.253-.199-.266-.666-.023-.884.149-.136.253-.155.769-.14.269.01.664.042.88.068zM0 16c0 8.836 7.163 16 16 16 8.836 0 16-7.163 16-16 0-8.836-7.163-16-16-16C7.164 0 0 7.163 0 16z"/>
+                    </svg></a><a class="socials__item" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="#fff" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
+                        <path fill="#f2c94c"
+                              d="M12.967 11.59c.113.235.226.555.066.865-.15.32-.282.46-.517.734-.235.273-.46.48-.696.771-.216.254-.46.527-.188.997.273.461 1.213 1.994 2.595 3.226 1.787 1.59 3.235 2.098 3.752 2.314.386.16.847.122 1.129-.179.357-.385.8-1.025 1.25-1.655.32-.452.724-.508 1.148-.348.432.15 2.717 1.279 3.187 1.514.47.235.781.348.894.545.113.198.113 1.13-.273 2.22-.386 1.091-1.918 1.995-3.14 2.258-.838.178-1.929.32-5.605-1.204-4.702-1.948-7.73-6.726-7.965-7.036-.226-.31-1.9-2.53-1.9-4.826 0-2.295 1.166-3.414 1.636-3.894.386-.395 1.025-.573 1.637-.573.198 0 .376.009.536.018.47.019.705.047 1.015.79.386.931 1.326 3.226 1.44 3.462zM15.995 0C7.175 0 0 7.177 0 16c0 3.499 1.129 6.744 3.047 9.378l-1.994 5.945 6.15-1.966A15.874 15.874 0 0 0 16.005 32C24.825 32 32 24.823 32 16S24.825 0 16.005 0h-.01z"/>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="header__col header__col_r">
+              <div class="header__tel"><a class="tel" href="tel:8(495)740-24-87">
+                  <svg class="tel__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="28" viewBox="0 0 18 28">
+                      <path fill="#f2c94c" d="M17.614 24.789c.077.178.116.36.116.544a1.337 1.337 0 0 1-.79 1.218l-1.17.536c-.458.203-.915.35-1.374.442a7.025 7.025 0 0 1-3.623-.229 8.568 8.568 0 0 1-2.11-1.05 10.644 10.644 0 0 1-1.89-1.655 12.818 12.818 0 0 1-1.58-2.164 26.524 26.524 0 0 1-.936-1.51 57.577 57.577 0 0 1-.949-1.732 35.51 35.51 0 0 1-1.078-2.24 28.3 28.3 0 0 1-1.387-3.677 9.719 9.719 0 0 1-.286-1.218A12.694 12.694 0 0 1 0 8.334c0-.795.082-1.56.245-2.297a8.033 8.033 0 0 1 .752-2.055c.338-.633.767-1.2 1.286-1.699.52-.5 1.133-.906 1.842-1.22L5.28.543c.182-.075.365-.113.548-.113a1.326 1.326 0 0 1 1.217.787L9.268 6.15a1.352 1.352 0 0 1-.091 1.264 1.28 1.28 0 0 1-.586.502L6.306 8.943a1.52 1.52 0 0 0-.694.596c-.16.263-.241.546-.241.849 0 .23.044.446.133.65l3.751 8.371c.147.322.35.56.609.71a1.615 1.615 0 0 0 1.481.09l2.285-1.027a1.329 1.329 0 0 1 1.259.095c.224.14.393.331.507.575z" / >
+                  </svg><span class="tel__val">8 (495) 740-24-87</span></a></div>
+              <div class="header__call"><a class="call jsCall" href="/">Заказать звонок</a></div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <nav class="nav"><a class="nav__item" href="">О нас</a><a class="nav__item" href="">Примеры работ</a><a class="nav__item" href="">Цены</a><a class="nav__item" href="">Клиника</a><a class="nav__item" href="">Отзывы</a><a class="nav__item" href="">Сертификаты</a>
+            </nav>
+          </div>
+        </div>
       </header>
       <div class="page">
-        <h1>Страничка "Главная"
-          <svg class="svg">
-            <use xlink:href="/images/icons/sprite.svg#001-twitter"></use>
-          </svg>
-        </h1>
+        <main class="main">
+          <section class="main__banner banner">
+            <div class="container">
+              <div class="row">
+                <div class="banner__left">
+                  <div class="banner__socials">
+                    <div class="banner__socials-list"><a class="banner__social" href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+                            <path fill="#f2c94c"
+                                  d="M9.032 8.902a2.647 2.647 0 0 1 3.287-.317c.428.28.762.677.96 1.142.197.465.248.977.148 1.47-.1.494-.349.947-.713 1.303a2.623 2.623 0 0 1-1.333.696 2.66 2.66 0 0 1-1.504-.145 2.59 2.59 0 0 1-1.169-.937 2.503 2.503 0 0 1 .324-3.212zM.15 12.93a12.589 12.589 0 0 1 3.814-8.858A13.18 13.18 0 0 1 13.027.345l9.44-.144h.033l9.473.144a13.18 13.18 0 0 1 9.064 3.728 12.59 12.59 0 0 1 3.815 8.858l.147 9.226.001.032-.148 9.258a12.589 12.589 0 0 1-3.815 8.858 13.18 13.18 0 0 1-9.064 3.728l-9.44.144H22.5l-9.473-.145a13.179 13.179 0 0 1-9.064-3.728 12.588 12.588 0 0 1-3.815-8.858L0 22.221v-.032zm4.189 18.451a8.557 8.557 0 0 0 2.593 6.022 8.959 8.959 0 0 0 6.162 2.534l9.407.144 9.407-.144a8.96 8.96 0 0 0 6.162-2.534 8.558 8.558 0 0 0 2.593-6.022l.147-9.193-.147-9.193a8.558 8.558 0 0 0-2.593-6.022 8.96 8.96 0 0 0-6.162-2.535L22.5 4.296l-9.407.143A8.96 8.96 0 0 0 6.93 6.974a8.557 8.557 0 0 0-2.593 6.022l-.147 9.193zm9.996-17.174a11.705 11.705 0 0 1 8.166-3.31c2.285-.001 4.52.661 6.42 1.902a11.352 11.352 0 0 1 4.255 5.068 11.053 11.053 0 0 1 .658 6.524 11.215 11.215 0 0 1-3.163 5.781 11.64 11.64 0 0 1-5.916 3.09 11.805 11.805 0 0 1-6.675-.642 11.502 11.502 0 0 1-5.186-4.159 11.11 11.11 0 0 1-1.947-6.273 11.176 11.176 0 0 1 3.388-7.98zm.802 7.98a7.123 7.123 0 0 0 2.16 5.087 7.46 7.46 0 0 0 5.204 2.11c1.456 0 2.88-.421 4.091-1.212a7.236 7.236 0 0 0 2.713-3.23 7.045 7.045 0 0 0 .419-4.158 7.148 7.148 0 0 0-2.015-3.685 7.419 7.419 0 0 0-3.771-1.97 7.524 7.524 0 0 0-4.255.41 7.33 7.33 0 0 0-3.305 2.65 7.081 7.081 0 0 0-1.241 3.999z"/>
+                        </svg></a><a class="banner__social" href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="37" viewBox="0 0 19 37">
+                            <path fill="#f2c94c"
+                                  d="M11.402 12.27h6.327l-.44 5.396h-5.887v18.749H3.968V17.666H0V12.27h3.968V8.643c0-1.596.043-4.062 1.277-5.59C6.546 1.438 8.333.34 11.402.34c5.003 0 7.113.67 7.113.67l-.992 5.526s-1.653-.45-3.196-.45c-1.543 0-2.925.518-2.925 1.97v4.214z"/>
+                        </svg></a></div>
+                    <div class="banner__socials-title">Мы в соц. сетях</div>
+                  </div>
+                  <div class="banner__image">
+                    <picture class="banner__img">
+                      <source srcset="images/content/banner/img.png" type="image/jpeg" media="(min-width:1199.9px)">
+                      <source srcset="images/content/banner/img-t.png" type="image/jpeg" media="(min-width:768.9px)">
+                      <source srcset="images/content/banner/img-m.png" type="image/jpeg" media="(min-width:320px)"><img src="images/content/banner/img.png" alt="lorem1">
+                    </picture><a class="banner__pr" href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118">
+                      <defs>
+                      <radialGradient id="nojxa" cx="59" cy="59" r="38" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#fec600"/>
+                      <stop offset="1" stop-color="#ffb800" stop-opacity="0"/>
+                      </radialGradient>
+                      </defs>
+                      <g>
+                      <g opacity=".3">
+                      <path fill="#fff" d="M118 59c0 32.585-26.415 59-59 59S0 91.585 0 59 26.415 0 59 0s59 26.415 59 59z"/>
+                      </g>
+                      <g>
+                      <path fill="#eb5757" d="M105 59c0 25.405-20.595 46-46 46S13 84.405 13 59s20.595-46 46-46 46 20.595 46 46z"/>
+                      </g>
+                      <g>
+                      <path fill="url(#nojxa)" d="M97 59c0 20.987-17.013 38-38 38S21 79.987 21 59s17.013-38 38-38 38 17.013 38 38z" / >
+                      </g>
+                      <g transform="rotate(90 61 60.5)">
+                      <path fill="#fff" d="M57.5 45l13.423 23.25H44.077z"/>
+                      </g>
+                      </g>
+                      </svg>
+                      <div class="banner__pr-txt">Смотреть презентацию</div></a>
+                  </div>
+                </div>
+                <div class="banner__right">
+                  <h2 class="banner__title">Стоматологическая<br><span class="line"><span class="line__txt">клиника Lotos</span></span></h2>
+                  <div class="banner__txt">Высокотехнологичный стоматологический центр с человеческим подходом к проблемам своих пациентов и разумными ценами.</div>
+                  <div class="banner__btns"><a class="banner__btn btn jsCall" href="/"><span class="banner__btn-2 btn__2"><span class="banner__btn-3 btn__3">Записаться на прием</span></span></a>
+                    <div class="banner__points">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="125" height="94" viewBox="0 0 125 94">
+                          <path d="M7.5 2.938c0 1.622-1.578 2.937-3.525 2.937C2.028 5.875.45 4.56.45 2.937.45 1.315 2.028 0 3.975 0 5.922 0 7.5 1.315 7.5 2.938z"/>
+                          <path d="M7.5 32.318c0 1.622-1.578 2.937-3.525 2.937-1.947 0-3.525-1.315-3.525-2.938 0-1.622 1.578-2.937 3.525-2.937 1.947 0 3.525 1.315 3.525 2.938z"/>
+                          <path d="M7.5 61.688c0 1.622-1.578 2.937-3.525 2.937-1.947 0-3.525-1.315-3.525-2.938 0-1.622 1.578-2.937 3.525-2.937 1.947 0 3.525 1.315 3.525 2.938z"/>
+                          <path d="M7.5 91.067c0 1.623-1.578 2.938-3.525 2.938-1.947 0-3.525-1.315-3.525-2.938 0-1.622 1.578-2.937 3.525-2.937 1.947 0 3.525 1.315 3.525 2.938z"/>
+                          <path d="M36.875 2.938a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M36.875 32.318a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M36.875 61.688a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M36.875 91.067a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M66.245 2.938a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M66.245 32.318a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M66.245 61.688a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M66.245 91.067a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M95.625 2.938a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M95.625 32.318a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M95.625 61.688a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M95.625 91.067a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M124.995 2.938a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M124.995 32.318a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M124.995 61.688a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                          <path d="M124.995 91.067a2.937 2.937 0 1 1-5.875 0 2.937 2.937 0 0 1 5.875 0z"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="banner__addr">
+                    <svg class="banner__addr-svg">
+                      <use xlink:href="/images/icons/sprite.svg#pin"></use>
+                    </svg>
+                    <div class="banner__addr-txt">
+                      г. Москва, метро Нахимовский проспект,
+                      ул. Одесская, д.2, Бизнес-центр «Лотос», корпус С, 4 й этаж
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><a class="banner__angle" href=""><img class="banner__angle-img" src="images/icons/angle-b.png" alt="lorem"/></a>
+          </section>
+          <section class="main__actions actions">
+            <div class="container">
+              <h2 class="actions__title title">Акции стоматологии:<br><span class="line"><span class="line__txt">лучшие условия для вас!</span></span></h2>
+              <div class="actions__txt">Всегда выгодные спецпредложения, скидки и акции на услуги для вас в умной стоматологии «Lotos» в Москве</div>
+              <div class="actions__list">
+                <div class="actions__item">
+                  <div class="action">
+                    <div class="action__block">
+                      <div class="row">
+                        <div class="action__content">
+                          <div class="action__title"><span class="action__title-title">Имплантация “под ключ” от </span><span class="action__title-oldprice">50 000 </span><span class="action__title-price">46 000 руб.</span></div>
+                          <div class="action__date">Акция до 30 мая</div><a class="action__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                        <div class="action__img"><img class="action__img-img" src="images/content/actions/1.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="action__list">
+                      <li class="action__item">Внешний вид имплантированного зуба является настолько естественным, что отличить его от натурального невозможно ни сразу после установки, ни через 10-20 лет;</li>
+                      <li class="action__item">Качество жевательной функции восстанавливается на 100%;</li>
+                      <li class="action__item">Постоянная нагрузка на костную ткань челюсти, которую передает вживленный имплантат, предотвращает развитие атрофических процессов;</li>
+                      <li class="action__item">Простота ухода за имплантированными зубами.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="actions__item">
+                  <div class="action_wt action">
+                    <div class="action__block">
+                      <div class="row">
+                        <div class="action__content">
+                          <div class="action__title"><span class="action__title-title">Протезирование <br></span><span class="action__title-oldprice">30 000 </span><span class="action__title-price">24 000 руб</span></div>
+                          <div class="action__date">Акция до 30 мая</div><a class="action__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                        <div class="action__img"><img class="action__img-img" src="images/content/actions/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="action__list">
+                      <li class="action__item">Внешний вид имплантированного зуба является настолько естественным, что отличить его от натурального невозможно ни сразу после установки, ни через 10-20 лет;</li>
+                      <li class="action__item">Качество жевательной функции восстанавливается на 100%;</li>
+                      <li class="action__item">Постоянная нагрузка на костную ткань челюсти, которую передает вживленный имплантат, предотвращает развитие атрофических процессов;</li>
+                      <li class="action__item">Простота ухода за имплантированными зубами.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="actions__item">
+                  <div class="action_oc action">
+                    <div class="action__block">
+                      <div class="row">
+                        <div class="action__content">
+                          <div class="action__title"><span class="action__title-title">Виниры и коронки <br></span><span class="action__title-oldprice">50 000 </span><span class="action__title-price">46 000 руб.</span></div>
+                          <div class="action__date">Акция до 30 мая</div><a class="action__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                        <div class="action__img"><img class="action__img-img" src="images/content/actions/3.jpg" alt="lorem"/>
+                        </div>
+                        <div class="action__points"><img class="action__points-svg" src="images/content/actions/points.svg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="action__list">
+                      <li class="action__item">Внешний вид имплантированного зуба является настолько естественным, что отличить его от натурального невозможно ни сразу после установки, ни через 10-20 лет;</li>
+                      <li class="action__item">Качество жевательной функции восстанавливается на 100%;</li>
+                      <li class="action__item">Постоянная нагрузка на костную ткань челюсти, которую передает вживленный имплантат, предотвращает развитие атрофических процессов;</li>
+                      <li class="action__item">Простота ухода за имплантированными зубами.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="actions__item">
+                  <div class="action_b action">
+                    <div class="action__block">
+                      <div class="row">
+                        <div class="action__content">
+                          <div class="action__title"><span class="action__title-title">Лечение кариеса <br></span><span class="action__title-oldprice">50 000 </span><span class="action__title-price">46 000 руб.</span></div>
+                          <div class="action__date">Акция до 30 мая</div><a class="action__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                        <div class="action__img"><img class="action__img-img" src="images/content/actions/4.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="action__list">
+                      <li class="action__item">Внешний вид имплантированного зуба является настолько естественным, что отличить его от натурального невозможно ни сразу после установки, ни через 10-20 лет;</li>
+                      <li class="action__item">Качество жевательной функции восстанавливается на 100%;</li>
+                      <li class="action__item">Постоянная нагрузка на костную ткань челюсти, которую передает вживленный имплантат, предотвращает развитие атрофических процессов;</li>
+                      <li class="action__item">Простота ухода за имплантированными зубами.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="actions__item">
+                  <div class="action_g action">
+                    <div class="action__block">
+                      <div class="row">
+                        <div class="action__content">
+                          <div class="action__title"><span class="action__title-title">Профессиональная гигиена </span><span class="action__title-oldprice">40 000 </span><span class="action__title-price">32 000 руб.</span></div>
+                          <div class="action__date">Акция до 30 мая</div><a class="action__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                        <div class="action__img"><img class="action__img-img" src="images/content/actions/5.jpg" alt="lorem"/>
+                        </div>
+                        <div class="action__points2"><img class="action__points2-svg" src="images/content/actions/points.svg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="action__list">
+                      <li class="action__item">Внешний вид имплантированного зуба является настолько естественным, что отличить его от натурального невозможно ни сразу после установки, ни через 10-20 лет;</li>
+                      <li class="action__item">Качество жевательной функции восстанавливается на 100%;</li>
+                      <li class="action__item">Постоянная нагрузка на костную ткань челюсти, которую передает вживленный имплантат, предотвращает развитие атрофических процессов;</li>
+                      <li class="action__item">Простота ухода за имплантированными зубами.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="actions__item">
+                  <div class="action_wt action">
+                    <div class="action__block">
+                      <div class="row">
+                        <div class="action__content">
+                          <div class="action__title"><span class="action__title-title">Отбеливание <br></span><span class="action__title-oldprice">36 000 </span><span class="action__title-price">30 000 руб.</span></div>
+                          <div class="action__date">Акция до 30 мая</div><a class="action__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                        <div class="action__img"><img class="action__img-img" src="images/content/actions/6.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="action__list">
+                      <li class="action__item">Внешний вид имплантированного зуба является настолько естественным, что отличить его от натурального невозможно ни сразу после установки, ни через 10-20 лет;</li>
+                      <li class="action__item">Качество жевательной функции восстанавливается на 100%;</li>
+                      <li class="action__item">Постоянная нагрузка на костную ткань челюсти, которую передает вживленный имплантат, предотвращает развитие атрофических процессов;</li>
+                      <li class="action__item">Простота ухода за имплантированными зубами.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div><a class="actions__btn btn" href="/"><span class="btn__2"><span class="btn__3">получить консультацию</span></span></a>
+            </div>
+          </section>
+          <section class="main__advantages advantages">
+            <div class="container">
+              <h2 class="advantages__title">Доверьтесь профессионалам</h2>
+              <div class="advantages__list">
+                <div class="advantages__item advantage">
+                  <div class="advantage__img"><img class="advantage__img-img" src="images/content/advantages/1.png" alt="lorem"/>
+                  </div>
+                  <div class="advantage__title">Большой опыт <br> работы</div>
+                </div>
+                <div class="advantages__item advantage">
+                  <div class="advantage__img"><img class="advantage__img-img" src="images/content/advantages/2.png" alt="lorem"/>
+                  </div>
+                  <div class="advantage__title">Чуткий подход к <br> каждому клиенту</div>
+                </div>
+                <div class="advantages__item advantage">
+                  <div class="advantage__img"><img class="advantage__img-img" src="images/content/advantages/3.png" alt="lorem"/>
+                  </div>
+                  <div class="advantage__title">Квалифицированные <br> специалисты</div>
+                </div>
+                <div class="advantages__item advantage">
+                  <div class="advantage__img"><img class="advantage__img-img" src="images/content/advantages/4.png" alt="lorem"/>
+                  </div>
+                  <div class="advantage__title">Инновационные <br> технологии и материалы</div>
+                </div>
+              </div>
+              <div class="advantages__block">
+                <div class="advantages__name">LOTOS</div>
+                <div class="advantages__img"><img class="advantages__img-img" src="images/content/advantages/img.png" alt="lorem"/>
+                </div>
+                <div class="advantages__txt">Мы заботимся о вашей<br><span class="advantages__txt_y">улыбке</span></div>
+              </div>
+            </div>
+          </section>
+          <section class="main__promo promo">
+            <div class="container">
+              <div class="promo__top">
+                <div class="promo__lamp"><img class="promo__lamp-img" src="images/content/promo/lamp.png" alt="lorem"/>
+                </div>
+                <h2 class="promo__title title"><span class="line"><span class="line__txt">Lotos — лучшая</span></span><br>стоматология в Москве</h2>
+                <div class="promo__quad"><img class="promo__quad-img" src="images/icons/quad.png" alt="lorem"/>
+                </div>
+              </div>
+              <div class="promo__bottom">
+                <div class="row">
+                  <div class="promo__left">
+                    <div class="promo__list">
+                      <div class="promo__col">
+                        <ul class="promo__ul">
+                          <li class="promo__item">Прогнозируемый результат</li>
+                          <li class="promo__item">Врачи повышают квалификацию по всему миру с применением самых современных мировых протоколов и стандартов </li>
+                          <li class="promo__item">Фиксируемая цена без доплат</li>
+                        </ul>
+                      </div>
+                      <div class="promo__col">
+                        <ul class="promo__ul">
+                          <li class="promo__item">Документальная гарантия 5 лет прописанная в договоре</li>
+                          <li class="promo__item">Красиво. Подбираем форму, размер и цвет зубов под Ваши черты лица</li>
+                          <li class="promo__item">Работа с оптикой под увеличением </li>
+                        </ul>
+                      </div>
+                    </div><a class="promo__btn btn jsCall" href="/"><span class="btn__2"><span class="btn__3">задать вопрос главному врачу</span></span></a>
+                  </div>
+                  <div class="promo__right">
+                    <div class="promo__block">
+                      <div class="promo__block-content">
+                        <div class="promo__block-name">Ацамаз Бекоев</div>
+                        <div class="promo__block-title">Главный врач-стоматололг<br>Основатель клиники “Lotos”<br>Опыт работы: # лет</div>
+                        <div class="promo__block-txt">Профессиональный стоматолог, ортопед-хирург с #-летним опытом. Более # курсов повышения квалификации по всему миру. Имеет медаль «Отличник стоматологии» стоматологической ассоциации России.</div>
+                      </div>
+                    </div>
+                    <div class="promo__img">
+                      <div class="promo__img2"><img class="promo__img2-img" src="images/content/promo/img2.png" alt="lorem"/>
+                      </div><img class="promo__img-img" src="images/content/promo/img.png" alt="lorem"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__certs certs">
+            <div class="container">
+              <div class="certs__top">
+                <div class="certs__quad"><img class="certs__quad-img" src="images/icons/quad.png" alt="lorem"/>
+                </div>
+                <h2 class="certs__title title"><span class="line"><span class="line__txt">Cертификаты</span></span></h2>
+                <div class="certs__points">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="139" height="107" viewBox="0 0 139 107">
+                      <g>
+                          <g opacity=".5">
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                  
+                </div>
+              </div>
+              <div class="certs__bottom">
+                <div class="certs__slider"><a class="certs__prev certs__arr" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="63" viewBox="0 0 39 63">
+                        <path fill="#f2c94c" d="M0 30.792l32.66 31.273 6.34-6.47-26.25-24.803L39 5.99 32.66-.48z"/>
+                    </svg>
+                    </a>
+                  <div class="swiper-container certs__slider-container">
+                    <div class="swiper-wrapper certs__slider-wrapeper">
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/1.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/1.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/2.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/2.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/3.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/3.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/4.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/4.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/5.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/5.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/1.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/1.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/2.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/2.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/3.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/3.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/4.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/4.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                      <div class="swiper-slide certs__slide"><a class="cert" href="images/content/certs/5.jpg" data-fancybox="certs"><img class="cert__img" src="images/content/certs/5.jpg" alt="lorem"/>
+                          <div class="cert__loop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+                            <g>
+                            <g opacity=".5">
+                            <path d="M34.44 29.939a2.516 2.516 0 0 1-3.559 3.559l-3.824-3.825a16.285 16.285 0 0 1-10.009 3.423C8.012 33.096.69 25.772.69 16.738S8.012.38 17.048.38c9.036 0 16.358 7.324 16.358 16.358 0 3.447-1.068 6.643-2.888 9.28zm-4.557-13.2c0-7.078-5.757-12.836-12.835-12.836-7.077 0-12.835 5.758-12.835 12.835 0 7.077 5.758 12.835 12.835 12.835 7.077 0 12.835-5.758 12.835-12.835z"/>
+                            </g>
+                            <g opacity=".5">
+                            <path d="M18.805 15.222V8.93h-3.523v6.292H8.99v3.523h6.292v6.292h3.523v-6.292h6.292v-3.523z"/>
+                            </g>
+                            </g>
+                            </svg>
+                          </div></a></div>
+                    </div>
+                  </div><a class="certs__next certs__arr" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="63" viewBox="0 0 40 63">
+                        <path fill="#f2c94c" d="M39.66 31.792L7 .52.66 6.99l26.25 24.802L.66 56.595 7 63.065z"/>
+                    </svg></a>
+                </div>
+                <div class="certs__pag"></div>
+              </div>
+            </div>
+          </section>
+          <section class="main__revs revs">
+            <div class="container">
+              <div class="revs__top">
+                <div class="revs__points">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="139" height="107" viewBox="0 0 139 107">
+                      <g>
+                          <g opacity=".5">
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                  
+                </div>
+                <h2 class="revs__title title"><span class="line"><span class="line__txt">Видео отзывы</span></span></h2>
+                <div class="revs__quad"><img class="revs__quad-img" src="images/icons/quad.png" alt="lorem"/>
+                </div>
+              </div>
+              <div class="revs__bottom">
+                <div class="revs__block">
+                  <div class="row"><a class="revs__video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox>
+                      <div class="revs__video-play"></div><img class="revs__video-img" src="images/content/revs/img.jpg" alt="lorem"/></a>
+                    <div class="revs__content">
+                      <div class="revs__content-title">Николай Новиков</div>
+                      <div class="revs__content-sub">Директор компании “Нефть и Газ”</div>
+                      <div class="revs__content-txt">
+                        Выражаю огромную благодарность всему коллективу клиники "Lotos". В особенности Писаревой Александре, Новикову Артуру за преданность своему делу, профессионализм, отзывчивость.
+                        Исраилову Муслиму огромную благодарность за открытие такой прекрасной клиники и за таких потрясающих сотрудников, которые всегда находят подход к каждому клиенту.
+                        Долгих лет службы и процветания клинике "Lotos".
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="revs__slider"><a class="revs__prev revs__arr" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="63" viewBox="0 0 39 63">
+                        <path fill="#f2c94c" d="M0 30.792l32.66 31.273 6.34-6.47-26.25-24.803L39 5.99 32.66-.48z"/>
+                    </svg>
+                    </a>
+                  <div class="swiper-container revs__slider-container">
+                    <div class="swiper-wrapper revs__slider-wrapeper">
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/1.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Николай Новиков</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/2.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Анна Смирнова</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/3.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Алексей Прохоров</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/4.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Нина Андреева</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/5.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Ольга Николаевна</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/6.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Николай Новиков</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/7.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Анна Смирнова</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/8.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Алексей Прохоров</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/9.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Нина Андреева</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                      <div class="swiper-slide revs__slide"><a class="rev" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><span class="rev__img"><img class="rev__img-img" src="images/content/revs/10.jpg" alt="lorem"/></span><span class="rev__bottom"><span class="rev__name">Ольга Николаевна</span><span class="rev__prof">Директор компании “Нефть и Газ”</span></span></a></div>
+                    </div>
+                  </div><a class="revs__next revs__arr" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="63" viewBox="0 0 40 63">
+                        <path fill="#f2c94c" d="M39.66 31.792L7 .52.66 6.99l26.25 24.802L.66 56.595 7 63.065z"/>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__photos photos">
+            <div class="container">
+              <div class="photos__top">
+                <h2 class="photos__title title"><span class="line"><span class="line__txt">Фото нашей клиники</span></span></h2>
+                <div class="row photos__row">
+                  <div class="photos__left">
+                    <div class="photos__li">Высокотехнологичный стоматологический центр с человеческим подходом к проблемам своих пациентов и разумными ценами.</div>
+                    <div class="photos__img"><img class="photos__img-img" src="images/content/photos/img1.jpg" alt="lorem"/>
+                    </div>
+                  </div>
+                  <div class="photos__right">
+                    <div class="photos__li">Современное оборудование. Комфортабельная клиника с панормным видом на город. Профессиональный подход к работе.</div>
+                    <div class="photos__img photos__img_r"><img class="photos__img-img" src="images/content/photos/img2.jpg" alt="lorem"/>
+                    </div>
+                  </div>
+                  <div class="photos__txt">
+                    <div class="photos__txt-txt">Стоматологическая клиника Lotos —&nbsp;<span class="photos__txt-txt_y">лучшая стоматология в Москве.</span> &nbsp;Мы не боимся громких заявлений - запишитесь на прием и проверьте сами.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photos__bottom">
+                <div class="photos__slider"><a class="photos__prev photos__arr" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="63" viewBox="0 0 39 63">
+                        <path fill="#f2c94c" d="M0 30.792l32.66 31.273 6.34-6.47-26.25-24.803L39 5.99 32.66-.48z"/>
+                    </svg>
+                    </a>
+                  <div class="swiper-container photos__slider-container">
+                    <div class="swiper-wrapper photos__slider-wrapeper">
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/1.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/1.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/2.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/2.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/3.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/3.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/4.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/4.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/5.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/5.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/1.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/1.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/2.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/2.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/3.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/3.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/4.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/4.jpg" alt="lorem"/></a></div>
+                      <div class="swiper-slide photos__slide"><a class="photo" href="images/content/photos/5.jpg" data-fancybox="photos"><img class="photo__img" src="images/content/photos/5.jpg" alt="lorem"/></a></div>
+                    </div>
+                  </div><a class="photos__next photos__arr" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="63" viewBox="0 0 40 63">
+                        <path fill="#f2c94c" d="M39.66 31.792L7 .52.66 6.99l26.25 24.802L.66 56.595 7 63.065z"/>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__rates rates">
+            <div class="container">
+              <h2 class="rates__title title"><span class="line"><span class="line__txt">Безупречная репутация</span></span></h2>
+              <div class="rates__txt">Репутация клиники и стоматологов — важный критерий при выборе места лечения. Нам нечего скрывать! Узнайте, что думают пациенты о «Lotos» на популярных интернет-порталах.</div>
+              <div class="rates__list">
+                <div class="rates__item rate">
+                  <div class="rate__img"><img class="rate__img-img" src="images/content/rates/1.png" alt="lorem"/>
+                  </div>
+                  <div class="rate__txt">Рейтинг</div>
+                  <div class="rate__rate">4,8 из 5</div>
+                </div>
+                <div class="rates__item rate">
+                  <div class="rate__img"><img class="rate__img-img" src="images/content/rates/2.png" alt="lorem"/>
+                  </div>
+                  <div class="rate__txt">Рейтинг</div>
+                  <div class="rate__rate">4,8 из 5</div>
+                </div>
+                <div class="rates__item rate">
+                  <div class="rate__img"><img class="rate__img-img" src="images/content/rates/3.png" alt="lorem"/>
+                  </div>
+                  <div class="rate__txt">Рейтинг</div>
+                  <div class="rate__stars">
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="rates__item rate">
+                  <div class="rate__img"><img class="rate__img-img" src="images/content/rates/4.png" alt="lorem"/>
+                  </div>
+                  <div class="rate__txt">Рейтинг</div>
+                  <div class="rate__rate">4,8 из 5</div>
+                </div>
+                <div class="rates__item rate">
+                  <div class="rate__img"><img class="rate__img-img" src="images/content/rates/5.png" alt="lorem"/>
+                  </div>
+                  <div class="rate__txt">Рейтинг</div>
+                  <div class="rate__stars">
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg active">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate__star">
+                      <svg class="rate__star-svg">
+                        <use xlink:href="/images/icons/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="rates__item rate">
+                  <div class="rate__img"><img class="rate__img-img" src="images/content/rates/6.png" alt="lorem"/>
+                  </div>
+                  <div class="rate__txt">Рейтинг</div>
+                  <div class="rate__rate">4,8 из 5</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__exs exs">
+            <div class="container">
+              <h2 class="exs__title title"><span class="line"><span class="line__txt">Примеры работ</span></span></h2>
+              <div class="exs__txt">Более&nbsp;<b>1000&nbsp;</b>+ пациентов остались довольны преображением своих улыбок.</div>
+              <div class="exs__sws"><a class="exs__sw active" href="" data-id="1">Женская улыбка</a><a class="exs__sw" href="" data-id="2">Мужская улыбка</a></div>
+              <div class="exs__tabs">
+                <div class="exs__tab active" data-id="1">
+                  <div class="row">
+                    <div class="exs__item">
+                      <div class="ex">
+                        <div class="juxtapose"><img class="ex__before" src="images/content/exs/1.jpg" alt="lorem"/><img class="ex__after" src="images/content/exs/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exs__item">
+                      <div class="ex">
+                        <div class="juxtapose"><img class="ex__before" src="images/content/exs/1.jpg" alt="lorem"/><img class="ex__after" src="images/content/exs/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exs__item">
+                      <div class="ex">
+                        <div class="juxtapose"><img class="ex__before" src="images/content/exs/1.jpg" alt="lorem"/><img class="ex__after" src="images/content/exs/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="exs__tab" data-id="2">
+                  <div class="row">
+                    <div class="exs__item">
+                      <div class="ex">
+                        <div class="juxtapose"><img class="ex__before" src="images/content/exs/1.jpg" alt="lorem"/><img class="ex__after" src="images/content/exs/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exs__item">
+                      <div class="ex">
+                        <div class="juxtapose"><img class="ex__before" src="images/content/exs/1.jpg" alt="lorem"/><img class="ex__after" src="images/content/exs/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exs__item">
+                      <div class="ex">
+                        <div class="juxtapose"><img class="ex__before" src="images/content/exs/1.jpg" alt="lorem"/><img class="ex__after" src="images/content/exs/2.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="exs__btn btn jsCall" href="/"><span class="btn__2"><span class="btn__3">Хочу так же!</span></span></a>
+            </div>
+          </section>
+          <section class="main__how how">
+            <div class="container">
+              <h2 class="how__title title">Компьютерное проектирование<br><span class="line"><span class="line__txt">и изготовление зубов</span></span></h2>
+              <div class="how__sub">Цифровой дизайн улыбки, под индивидуальные особенности лица.</div>
+              <div class="how__img"><img class="how__img-img" src="images/content/how/img.png" alt="lorem"/>
+              </div>
+              <div class="row how__row">
+                <div class="how__item">
+                  <div class="how__pic"><img class="how__pic-img" src="images/content/how/1.jpg" alt="lorem"/>
+                  </div>
+                </div>
+                <div class="how__item">
+                  <div class="how__content">
+                    <div class="how__item-title">Заголовок 1</div>
+                    <div class="how__item-txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
+                  </div>
+                </div>
+                <div class="how__item">
+                  <div class="how__content how__content_r">
+                    <div class="how__item-title">Заголовок 1</div>
+                    <div class="how__item-txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
+                  </div>
+                </div>
+                <div class="how__item">
+                  <div class="how__pic"><img class="how__pic-img" src="images/content/how/2.jpg" alt="lorem"/>
+                  </div>
+                </div>
+              </div><a class="how__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">получить консультацию</span></span></a>
+            </div>
+          </section>
+          <section class="main__prices prices">
+            <div class="container">
+              <div class="row">
+                <div class="prices__wrap">
+                  <h2 class="prices__title title"><span class="line"><span class="line__txt">Стоимость услуг</span></span></h2>
+                  <div class="prices__sub">Наши цены на&nbsp;<b>50%&nbsp;</b>ниже рыночных</div>
+                  <div class="prices__txt">Профессиональные стоматологи ческие услуги по доступным ценам</div>
+                  <div class="prices__list">
+                    <div class="prices__item">
+                      <div class="price">
+                        <div class="price__img"><img class="price__img-img" src="images/content/prices/1.png" alt="lorem"/>
+                        </div>
+                        <div class="price__left">
+                          <div class="price__title">Профессиональная гигиена</div>
+                          <div class="price__txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
+                        </div>
+                        <div class="price__right">
+                          <div class="price__old">8 000 руб.</div>
+                          <div class="price__new">4 000 руб.</div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prices__item">
+                      <div class="price">
+                        <div class="price__img"><img class="price__img-img" src="images/content/prices/2.png" alt="lorem"/>
+                        </div>
+                        <div class="price__left">
+                          <div class="price__title">Реставрация</div>
+                          <div class="price__txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
+                        </div>
+                        <div class="price__right">
+                          <div class="price__old">8 000 руб.</div>
+                          <div class="price__new">4 000 руб.</div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prices__item">
+                      <div class="price">
+                        <div class="price__img"><img class="price__img-img" src="images/content/prices/3.png" alt="lorem"/>
+                        </div>
+                        <div class="price__left">
+                          <div class="price__title">Отбеливание</div>
+                          <div class="price__txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
+                        </div>
+                        <div class="price__right">
+                          <div class="price__old">8 000 руб.</div>
+                          <div class="price__new">4 000 руб.</div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div><a class="prices__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">Смотреть прайс-лист</span></span></a>
+                  <div class="prices__img"><img class="prices__img-img" src="images/content/prices/img.png" alt="lorem"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__resps resps">
+            <div class="container">
+              <h2 class="resps__title title"><span class="line"><span class="line__txt">Отзывы наших пациентов</span></span></h2>
+              <div class="resps__sub">За 15 лет мы сделали более 6500 людей счастливее</div>
+              <div class="resps__slider"><a class="resps__prev resps__arr" href="/">
+                  <svg width="97" height="16" viewBox="0 0 97 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292893 7.29288C-0.0976333 7.68341 -0.0976334 8.31657 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6568L2.41422 7.99999L8.07107 2.34314C8.46159 1.95261 8.46159 1.31945 8.07107 0.928924C7.68054 0.5384 7.04738 0.5384 6.65685 0.928924L0.292893 7.29288ZM97 7L1 6.99999L1 8.99999L97 9L97 7Z" fill="#848484"/>
+                  </svg>
+                  
+                  </a>
+                <div class="swiper-container resps__slider-container">
+                  <div class="swiper-wrapper resps__slider-wrapeper">
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide resps__slide">
+                      <div class="resp">
+                        <div class="resp__img"><img class="resp__img-img" src="images/content/resps/img.jpg" alt="lorem"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="resps__next resps__arr" href="/">
+                  <svg width="97" height="16" viewBox="0 0 97 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M96.7071 8.70711C97.0976 8.31658 97.0976 7.68342 96.7071 7.29289L90.3431 0.928932C89.9526 0.538408 89.3195 0.538408 88.9289 0.928932C88.5384 1.31946 88.5384 1.95262 88.9289 2.34315L94.5858 8L88.9289 13.6569C88.5384 14.0474 88.5384 14.6805 88.9289 15.0711C89.3195 15.4616 89.9526 15.4616 90.3431 15.0711L96.7071 8.70711ZM0 9L96 9V7L0 7L0 9Z" fill="#848484"/>
+                  </svg></a>
+              </div><a class="resps__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">Смотреть прайс-лист</span></span></a>
+            </div>
+          </section>
+          <section class="main__feed feed">
+            <div class="container feed__container">
+              <div class="feed__left">
+                <div class="feed__points">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="139" height="107" viewBox="0 0 139 107">
+                      <g>
+                          <g opacity=".5">
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M11 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M43 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M75 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M107 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                              <g opacity=".5">
+                                  <path fill="#c4c4c4" d="M139 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </div>
+                <div class="feed__form form">
+                  <div class="form__title">Задайте свой вопрос</div>
+                  <div class="form__sub">Заполните форму или позвоните нам<br>по телефону&nbsp;<a href="tel:8(495)740-24-87">8 (495) 740-24-87</a></div>
+                  <div class="form__fields">
+                    <div class="form__field">
+                      <input class="form__input" type="text" name="name" placeholder="Введите Имя*">
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input" type="tel" name="tel" placeholder="Введите телефон*">
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input" type="email" name="email" placeholder="Введите e-mail">
+                    </div>
+                    <div class="form__field">
+                      <textarea class="form__input form__input_area" name="comment" placeholder="Комментарий"></textarea>
+                    </div>
+                  </div>
+                  <div class="form__policy">Заполняя данную форму Вы соглашаетесь&nbsp;<br><a href="/">с Политикой обработки персональных данных</a></div>
+                  <button class="form__submit btn" type="submit"><span class="btn__2"><span class="btn__3">Отправить</span></span></button>
+                </div>
+              </div>
+              <div class="feed__right">
+                <h2 class="feed__title">Остались вопросы?<br>Задайте их главному врачу</h2>
+                <div class="feed__quad"><img class="feed__quad-img" src="images/icons/quad.png" alt="lorem"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__map map">
+            <div id="map"><img class="map__img" src="images/content/map.jpg" alt="lorem"/>
+            </div>
+            <div class="container map__container">
+              <div class="map__wrap">
+                <div class="row">
+                  <div class="map__left">
+                    <div class="map__addr">
+                      <div class="map__addr-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="35" viewBox="0 0 23 35">
+                            <path fill="#f2c94c"
+                                  d="M23 11.5a11.52 11.52 0 0 1-1.377 5.46l-9.494 17.17a.718.718 0 0 1-1.258 0l-9.49-17.165A11.521 11.521 0 0 1 0 11.5C0 5.159 5.159 0 11.5 0S23 5.159 23 11.5zm-5.75 0c0-3.17-2.58-5.75-5.75-5.75S5.75 8.33 5.75 11.5s2.58 5.75 5.75 5.75 5.75-2.58 5.75-5.75z"/>
+                        </svg>
+                      </div>
+                      <div class="map__addr-txt">г. Москва, метро Нахимовский проспект,<br>ул. Одесская, д.2, Бизнес-центр «Лотос», корпус С, 4 й этаж</div>
+                    </div>
+                  </div>
+                  <div class="map__right">
+                    <div class="map__time">
+                      <div class="map__time-img">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 0C9.86941 0 0 9.86941 0 22C0 34.1306 9.86941 44 22 44C34.1306 44 44 34.1306 44 22C44 9.86941 34.1306 0 22 0ZM22 41.25C11.3854 41.25 2.75001 32.6146 2.75001 22C2.75001 11.3854 11.3854 2.75001 22 2.75001C32.6146 2.75001 41.25 11.3854 41.25 22C41.25 32.6146 32.6146 41.25 22 41.25Z" fill="#F2C94C"/>
+                        <path d="M23.375 8.25H20.625V22.5693L29.2778 31.2221L31.2222 29.2778L23.375 21.4306V8.25Z" fill="#F2C94C"/>
+                        </svg>
+                      </div>
+                      <div class="map__time-txt">График работы<br><b>Пн-Пт: с 09:00 до 20:00</b></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top"><a class="footer__logo" href="/"><img class="undefined" src="images/icons/logo-f.png" alt="lorem"/></a>
+            <div class="footer__wes"><a class="footer__we" href="">
+                <svg class="footer__we-svg footer__we-svg_inst">
+                  <use xlink:href="/images/icons/sprite.svg#inst"></use>
+                </svg></a><a class="footer__we" href="">
+                <svg class="footer__we-svg footer__we-svg_fb">
+                  <use xlink:href="/images/icons/sprite.svg#fb"></use>
+                </svg></a>
+              <div class="footer__wes-txt">Мы в соц. сетях</div>
+            </div>
+            <div class="footer__socials">
+              <div class="socials"><a class="socials__item" href="/">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5">
+                  <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#919191"/>
+                  <path d="M23.7875 9.20599L20.9312 23.6122C20.9312 23.6122 20.5312 24.6122 19.4312 24.131L12.8375 19.0747L10.4375 17.9185L6.39998 16.5622C6.39998 16.5622 5.78123 16.3435 5.71873 15.8622C5.65623 15.381 6.41873 15.1247 6.41873 15.1247L22.4687 8.83099C22.4687 8.82474 23.7875 8.24349 23.7875 9.20599Z" fill="white"/>
+                  <path d="M12.325 23.4498C12.325 23.4498 12.1313 23.431 11.8938 22.6748C11.6563 21.9185 10.4375 17.9185 10.4375 17.9185L20.1313 11.7623C20.1313 11.7623 20.6938 11.4248 20.6688 11.7623C20.6688 11.7623 20.7688 11.8248 20.4688 12.0998C20.1688 12.3811 12.8563 18.956 12.8563 18.956" fill="#B3B3B3"/>
+                  <path d="M15.3625 21.0125L12.7562 23.3938C12.7562 23.3938 12.55 23.55 12.3312 23.45L12.8312 19.0312" fill="#B3B3B3"/>
+                  </g>
+                  </svg></a><a class="socials__item" href="/">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5">
+                  <circle cx="16" cy="16" r="16" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.85 11.191C18.473 11.3237 18.9505 11.5605 19.3585 11.9425C19.8835 12.4383 20.1713 13.0382 20.2978 13.9003C20.3833 14.4623 20.3482 14.6832 20.149 14.8665C19.9625 15.037 19.6178 15.0433 19.409 14.8822C19.2572 14.7685 19.2097 14.6485 19.175 14.3232C19.134 13.8905 19.058 13.5875 18.9282 13.3065C18.65 12.7098 18.1597 12.4002 17.3312 12.2992C16.9422 12.2517 16.8252 12.2078 16.6987 12.0592C16.4677 11.7845 16.5565 11.3393 16.8757 11.175C16.996 11.115 17.0465 11.1088 17.3123 11.1245C17.477 11.134 17.7205 11.1625 17.85 11.191ZM17.1765 8.80675C19.0963 9.08775 20.5825 9.97825 21.5567 11.4245C22.104 12.2393 22.4455 13.196 22.5625 14.2222C22.6035 14.598 22.6035 15.2832 22.5592 15.397C22.518 15.5043 22.3853 15.6495 22.2715 15.7095C22.1483 15.7727 21.8857 15.7663 21.7402 15.6905C21.4967 15.5673 21.424 15.3715 21.424 14.841C21.424 14.0232 21.212 13.161 20.8452 12.4915C20.4277 11.7273 19.8205 11.0957 19.0805 10.6567C18.4447 10.2778 17.5055 9.99675 16.6485 9.92725C16.3385 9.902 16.1678 9.83875 16.0508 9.703C15.8705 9.49775 15.8515 9.21975 16.0033 8.98925C16.1675 8.73425 16.4205 8.693 17.1765 8.80675ZM9.7285 6.8585C9.83925 6.8965 10.01 6.98475 10.108 7.048C10.7087 7.446 12.3818 9.58375 12.929 10.651C13.242 11.2605 13.3465 11.712 13.2485 12.0468C13.1473 12.4067 12.9797 12.5963 12.23 13.1993C11.9295 13.4423 11.648 13.6918 11.6038 13.7583C11.49 13.9225 11.3982 14.2445 11.3982 14.472C11.4015 14.9993 11.743 15.9562 12.192 16.692C12.5398 17.2635 13.1628 17.996 13.7795 18.5583C14.5037 19.2215 15.1425 19.673 15.8638 20.0298C16.7905 20.4908 17.3565 20.6075 17.7708 20.415C17.875 20.3675 17.9858 20.3045 18.0205 20.276C18.052 20.2475 18.2958 19.9508 18.5613 19.6222C19.0735 18.978 19.1905 18.8738 19.5417 18.7537C19.9877 18.6022 20.443 18.6433 20.9018 18.877C21.2498 19.057 22.0088 19.5275 22.4988 19.8685C23.144 20.32 24.5227 21.4443 24.7095 21.6685C25.0382 22.0728 25.0953 22.5905 24.874 23.1623C24.64 23.7653 23.7292 24.8958 23.0935 25.379C22.518 25.8148 22.11 25.982 21.5723 26.0072C21.1295 26.0292 20.946 25.9915 20.38 25.7577C15.94 23.9295 12.3947 21.2013 9.58 17.4527C8.1095 15.495 6.98975 13.4645 6.2245 11.3582C5.7785 10.13 5.7565 9.59625 6.12325 8.96775C6.2815 8.7025 6.955 8.04575 7.44525 7.6795C8.26125 7.07325 8.6375 6.849 8.938 6.78575C9.1435 6.7415 9.501 6.77625 9.7285 6.8585ZM16.9583 6.5175C18.0462 6.65325 18.9252 6.91525 19.89 7.386C20.8387 7.85025 21.446 8.28925 22.2493 9.088C23.002 9.84275 23.4195 10.4143 23.8622 11.3015C24.479 12.5393 24.83 14.011 24.89 15.6307C24.9122 16.1833 24.8962 16.3065 24.7698 16.4645C24.5295 16.7708 24.0012 16.7202 23.821 16.376C23.764 16.2622 23.7482 16.1645 23.7292 15.7222C23.6975 15.0433 23.6502 14.6045 23.5553 14.0802C23.182 12.0245 22.1953 10.3825 20.6203 9.2045C19.3078 8.21925 17.951 7.73925 16.1737 7.635C15.5728 7.60025 15.4685 7.57825 15.3325 7.474C15.0795 7.275 15.0668 6.80775 15.3103 6.58975C15.459 6.454 15.5633 6.435 16.0788 6.45075C16.348 6.4605 16.7432 6.49225 16.9583 6.5175ZM16 0C24.8365 0 32 7.1635 32 16C32 24.8365 24.8365 32 16 32C7.1635 32 0 24.8365 0 16C0 7.1635 7.1635 0 16 0Z" fill="#919191"/>
+                  </g>
+                  </svg></a><a class="socials__item" href="/">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5">
+                  <circle cx="16" cy="16" r="16" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5285 8.12725C11.2182 7.38425 10.983 7.356 10.513 7.337C10.353 7.32775 10.1748 7.3185 9.977 7.3185C9.3655 7.3185 8.72625 7.49725 8.3405 7.89225C7.8705 8.372 6.70425 9.49125 6.70425 11.7863C6.70425 14.0815 8.378 16.3013 8.60375 16.612C8.839 16.922 11.867 21.7005 16.5688 23.648C20.2455 25.1718 21.3365 25.0305 22.1733 24.852C23.3958 24.5887 24.9285 23.6852 25.3143 22.5945C25.6998 21.5033 25.6998 20.572 25.5868 20.3745C25.474 20.177 25.1635 20.0645 24.6935 19.829C24.2235 19.5938 21.9383 18.465 21.5058 18.3145C21.0825 18.1548 20.6782 18.2113 20.3587 18.6628C19.9072 19.293 19.4655 19.9328 19.108 20.3183C18.826 20.6193 18.365 20.657 17.9795 20.497C17.4622 20.281 16.0142 19.7725 14.2275 18.183C12.845 16.951 11.9047 15.418 11.6322 14.957C11.3595 14.4867 11.604 14.2137 11.8202 13.96C12.0555 13.6683 12.281 13.4615 12.516 13.1885C12.7512 12.9158 12.8827 12.7747 13.0332 12.4548C13.1932 12.1445 13.0802 11.8245 12.9675 11.5892C12.8545 11.3535 11.9142 9.05825 11.5285 8.12725ZM15.9952 0C7.17475 0 0 7.17675 0 15.9998C0 19.4988 1.1285 22.744 3.04675 25.3778L1.053 31.3225L7.203 29.357C9.7325 31.0312 12.751 32 16.0047 32C24.8252 32 32 24.8228 32 16.0002C32 7.17725 24.8252 0.0005 16.0047 0.0005H15.9955V0H15.9952Z" fill="#919191"/>
+                  </g>
+                  </svg>
+                  
+                  
+                  
+                  </a></div>
+            </div>
+            <div class="footer__tels"><a class="footer__tel" href="tel:8(495)740-24-87">8 (495) 740-24-87</a><a class="footer__tel" href="tel:8(495)740-24-87">8 (495) 740-24-87</a></div>
+          </div>
+          <div class="footer__middle">
+            <div class="row">
+              <div class="footer__col">Lotos - Мы самая необычная стоматология и самые увлеченные врачи, Мы - те и другие, потому что делаем зубы, как для себя, за результат мы отвечаем своими именами.</div>
+              <div class="footer__col">Стоматологическая клиника Lotos — лучшая стоматология в Москве. Мы не боимся громких заявлений - запишитесь на прием и проверьте сами.</div>
+            </div>
+          </div>
+          <div class="footer__bottom"><a class="footer__policy" href="/">Политика конфиденциальности</a>
+            <div class="footer__copy">2020 - Все права защищены</div>
+          </div>
+        </div>
+      </footer>
     </div>
-  </body>
-  <div class="debug">
-    <div>
+    <div class="debug">
       <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <!-- Для изменений после верстки-->
+    <script src="js/custom.js"></script>
+  </body>
 </html>

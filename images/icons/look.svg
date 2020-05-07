@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118">
+    <defs>
+        <radialGradient id="nojxa" cx="59" cy="59" r="38" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fec600"/>
+            <stop offset="1" stop-color="#ffb800" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+    <g>
+        <g opacity=".3">
+            <path fill="#fff" d="M118 59c0 32.585-26.415 59-59 59S0 91.585 0 59 26.415 0 59 0s59 26.415 59 59z"/>
+        </g>
+        <g>
+            <path fill="#eb5757" d="M105 59c0 25.405-20.595 46-46 46S13 84.405 13 59s20.595-46 46-46 46 20.595 46 46z"/>
+        </g>
+        <g>
+            <path fill="url(#nojxa)"
+                  d="M97 59c0 20.987-17.013 38-38 38S21 79.987 21 59s17.013-38 38-38 38 17.013 38 38z"/>
+        </g>
+        <g transform="rotate(90 61 60.5)">
+            <path fill="#fff" d="M57.5 45l13.423 23.25H44.077z"/>
+        </g>
+    </g>
+</svg>

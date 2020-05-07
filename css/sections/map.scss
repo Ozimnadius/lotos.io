@@ -1,0 +1,65 @@
+.map{
+  position: relative;
+
+  &__container{
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    right: 0;
+  }
+
+  &__wrap{
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 25px 45px;
+  }
+
+  &__left{
+    @include col;
+    @include size(14);
+    @include shift-right(2);
+    padding: 20px 0;
+    border-right: 1px solid rgba(#000000,.5);
+  }
+
+  &__right{
+    @include col;
+    @include size(8);
+    padding: 20px 0;
+  }
+
+  &__addr{
+    display: flex;
+    &-img{
+      margin-right: 15px;
+      svg{
+        width: 34px;
+        height: 51px;
+      }
+    }
+
+    &-txt{
+      color: #1c1c1c;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 142%;
+    }
+  }
+
+  &__time{
+    display: flex;
+    &-img{
+      margin-right: 20px;
+    }
+
+    &-txt{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 142%;
+      b{
+        font-weight: 600;
+      }
+    }
+  }
+
+}

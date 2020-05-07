@@ -1,3 +1,95 @@
 .footer {
+  background: url("/images/content/footer/bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 40px;
 
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__middle {
+    margin-bottom: 60px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    margin-right: 45px;
+  }
+
+  &__wes {
+    display: flex;
+    align-items: center;
+
+    &-txt{
+      color: rgba(#ffffff,.5);
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  &__we {
+    margin-right: 25px;
+    &-svg {
+      fill: rgba(#fff, .5);
+
+      &_inst {
+        /* Base style */
+        width: 33px;
+        height: 32px;
+
+      }
+
+      &_fb {
+        width: 14px;
+        height: 27px;
+      }
+    }
+  }
+
+  &__socials{
+    margin-right: 35px;
+    margin-left: auto;
+  }
+
+  &__tels{
+    display: flex;
+  }
+
+  &__tel{
+    color: rgba(#ffffff,.5);
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 35px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__col{
+    @include col;
+    @include size(12);
+    color: rgba(#ffffff,.5);
+    line-height: lh(16,19);
+  }
+
+  &__policy{
+    color: rgba(#f2c94c,.5);
+    text-decoration: underline;
+    padding: 13px 10px 13px 0;
+    border-right: 1px solid #777777;
+    margin-right: 10px;
+  }
+
+  &__copy{
+    color: rgba(#ffffff,.5);
+  }
 }

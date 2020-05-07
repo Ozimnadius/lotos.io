@@ -1,0 +1,53 @@
+.resps{
+  background: url("/images/content/resps/bg.png") 254px 135px no-repeat;
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  &__title{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__sub{
+    color: rgba(#1c1c1c,.9);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__slider{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+
+    &-container{
+      flex-grow: 1;
+      margin: 0 40px;
+    }
+  }
+
+  &__btn{
+    width: 383px;
+    height: 96px;
+    margin: 0 auto;
+  }
+
+}
+
+.resp{
+  padding: 15px;
+  border-radius: 30px;
+  background-image: linear-gradient(103.6deg, #db9000 0%, #ffd179 52%, #d98f00 100%);
+  overflow: hidden;
+
+  &__img{
+    border-radius: 30px;
+    overflow: hidden;
+    &-img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
