@@ -1,65 +1,147 @@
-.map{
+.map {
   position: relative;
 
-  &__container{
+  &__container {
     position: absolute;
     bottom: -75px;
     left: 0;
     right: 0;
+    @include lg-block {
+      bottom: -160px;
+    }
+    @include sm-block{
+      width: 272px;
+      left: 50%;
+      margin-left: -136px;
+      bottom: -290px;
+    }
   }
 
-  &__wrap{
+  &__wrap {
     border-radius: 10px;
     background-color: #ffffff;
     padding: 25px 45px;
+    @include lg-block {
+      padding: 45px;
+    }
+    @include sm-block{
+      padding: 30px;
+    }
   }
 
-  &__left{
+  &__left {
     @include col;
     @include size(14);
     @include shift-right(2);
     padding: 20px 0;
-    border-right: 1px solid rgba(#000000,.5);
+    border-right: 1px solid rgba(#000000, .5);
+    @include size-lg(24);
+    @include shift-lg-right(0);
+    @include lg-block {
+      border-right: none;
+      border-bottom: 1px solid rgba(#000000, .5);
+      padding: 0;
+      padding-bottom: 20px;
+      @include sm-block{
+        margin-bottom: 50px;
+        padding: 0;
+        border: none;
+      }
+    }
   }
 
-  &__right{
+  &__right {
     @include col;
     @include size(8);
     padding: 20px 0;
+    @include size-lg(24);
+    @include lg-block {
+      padding: 0;
+      padding-top: 20px;
+    }
+    @include sm-block{
+      padding: 0;
+    }
   }
 
-  &__addr{
+  &__addr {
     display: flex;
-    &-img{
+    @include sm-block{
+        flex-direction: column;
+      align-items: center;
+    }
+
+    &-img {
       margin-right: 15px;
-      svg{
+      @include sm-block{
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      svg {
         width: 34px;
         height: 51px;
+        @include sm-block{
+          width: 46px;
+          height: 69px;
+        }
       }
     }
 
-    &-txt{
+    &-txt {
       color: #1c1c1c;
       font-size: 18px;
       font-weight: 500;
       line-height: 142%;
+      @include sm-block{
+        font-size: 14px;
+        text-align: center;
+      }
     }
   }
 
-  &__time{
+  &__time {
     display: flex;
-    &-img{
-      margin-right: 20px;
+    @include sm-block{
+        flex-direction: column;
+      align-items: center;
     }
 
-    &-txt{
+    &-img {
+      margin-right: 20px;
+      @include sm-block{
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-txt {
       font-size: 18px;
       font-weight: 400;
       line-height: 142%;
-      b{
+      @include sm-block{
+        font-size: 14px;
+        text-align: center;
+      }
+
+      b {
         font-weight: 600;
       }
     }
   }
 
+}
+
+#map {
+  width: 100%;
+  height: 541px;
+  @include sm-block {
+    height: 279px;
+  }
+
+  iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }

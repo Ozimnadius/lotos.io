@@ -28,8 +28,8 @@
                 <div class="time__val">Пн-Пт: с 09:00 до 20:00</div>
               </div>
             </div>
-            <div class="header__col">
-              <div class="header__tel"><a class="tel" href="tel:8(495)740-24-87"><span class="tel__val">8 (495) 740-24-87</span></a></div>
+            <div class="header__col header__col_m">
+              <div class="header__tel header__tel_m"><a class="tel" href="tel:8(495)740-24-87"><span class="tel__val">8 (495) 740-24-87</span></a></div>
               <div class="header__socials">
                 <div class="socials"><a class="socials__item" href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="header__bottom">
-            <nav class="nav"><a class="nav__item" href="">О нас</a><a class="nav__item" href="">Примеры работ</a><a class="nav__item" href="">Цены</a><a class="nav__item" href="">Клиника</a><a class="nav__item" href="">Отзывы</a><a class="nav__item" href="">Сертификаты</a>
+            <nav class="nav"><a class="nav__item" href="#about">О нас</a><a class="nav__item" href="#exs">Примеры работ</a><a class="nav__item" href="#prices">Цены</a><a class="nav__item" href="#photos">Клиника</a><a class="nav__item" href="#revs">Отзывы</a><a class="nav__item" href="#certs">Сертификаты</a>
             </nav>
           </div>
         </div>
@@ -87,7 +87,7 @@
                       <source srcset="images/content/banner/img.png" type="image/jpeg" media="(min-width:1199.9px)">
                       <source srcset="images/content/banner/img-t.png" type="image/jpeg" media="(min-width:768.9px)">
                       <source srcset="images/content/banner/img-m.png" type="image/jpeg" media="(min-width:320px)"><img src="images/content/banner/img.png" alt="lorem1">
-                    </picture><a class="banner__pr" href="">
+                    </picture><a class="banner__pr" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox>
                       <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118">
                       <defs>
                       <radialGradient id="nojxa" cx="59" cy="59" r="38" gradientUnits="userSpaceOnUse">
@@ -153,7 +153,9 @@
                   </div>
                 </div>
               </div>
-            </div><a class="banner__angle" href=""><img class="banner__angle-img" src="images/icons/angle-b.png" alt="lorem"/></a>
+            </div>
+            <div class="banner__angle"><img class="banner__angle-img" src="images/icons/angle-b.png" alt="lorem"/>
+            </div>
           </section>
           <section class="main__actions actions">
             <div class="container">
@@ -284,7 +286,7 @@
                     </ul>
                   </div>
                 </div>
-              </div><a class="actions__btn btn" href="/"><span class="btn__2"><span class="btn__3">получить консультацию</span></span></a>
+              </div><a class="actions__btn btn jsCall2" href="/"><span class="btn__2"><span class="btn__3">получить консультацию</span></span></a>
             </div>
           </section>
           <section class="main__advantages advantages">
@@ -313,7 +315,7 @@
                 </div>
               </div>
               <div class="advantages__block">
-                <div class="advantages__name">LOTOS</div>
+                <div class="advantages__name" id="about">LOTOS</div>
                 <div class="advantages__img"><img class="advantages__img-img" src="images/content/advantages/img.png" alt="lorem"/>
                 </div>
                 <div class="advantages__txt">Мы заботимся о вашей<br><span class="advantages__txt_y">улыбке</span></div>
@@ -347,7 +349,7 @@
                           <li class="promo__item">Работа с оптикой под увеличением </li>
                         </ul>
                       </div>
-                    </div><a class="promo__btn btn jsCall" href="/"><span class="btn__2"><span class="btn__3">задать вопрос главному врачу</span></span></a>
+                    </div><a class="promo__btn btn" href="#feed"><span class="btn__2"><span class="btn__3">задать вопрос главному врачу</span></span></a>
                   </div>
                   <div class="promo__right">
                     <div class="promo__block">
@@ -366,7 +368,7 @@
               </div>
             </div>
           </section>
-          <section class="main__certs certs">
+          <section class="main__certs certs" id="certs">
             <div class="container">
               <div class="certs__top">
                 <div class="certs__quad"><img class="certs__quad-img" src="images/icons/quad.png" alt="lorem"/>
@@ -590,7 +592,7 @@
               </div>
             </div>
           </section>
-          <section class="main__revs revs">
+          <section class="main__revs revs" id="revs">
             <div class="container">
               <div class="revs__top">
                 <div class="revs__points">
@@ -707,18 +709,22 @@
               </div>
             </div>
           </section>
-          <section class="main__photos photos">
+          <section class="main__photos photos" id="photos">
             <div class="container">
               <div class="photos__top">
                 <h2 class="photos__title title"><span class="line"><span class="line__txt">Фото нашей клиники</span></span></h2>
                 <div class="row photos__row">
                   <div class="photos__left">
                     <div class="photos__li">Высокотехнологичный стоматологический центр с человеческим подходом к проблемам своих пациентов и разумными ценами.</div>
+                  </div>
+                  <div class="photos__right">
+                    <div class="photos__li">Современное оборудование. Комфортабельная клиника с панормным видом на город. Профессиональный подход к работе.</div>
+                  </div>
+                  <div class="photos__left">
                     <div class="photos__img"><img class="photos__img-img" src="images/content/photos/img1.jpg" alt="lorem"/>
                     </div>
                   </div>
                   <div class="photos__right">
-                    <div class="photos__li">Современное оборудование. Комфортабельная клиника с панормным видом на город. Профессиональный подход к работе.</div>
                     <div class="photos__img photos__img_r"><img class="photos__img-img" src="images/content/photos/img2.jpg" alt="lorem"/>
                     </div>
                   </div>
@@ -848,9 +854,11 @@
                   <div class="rate__rate">4,8 из 5</div>
                 </div>
               </div>
+              <div class="rates__img"><img class="rates__img-img" src="images/content/rates/img.jpg" alt="lorem"/>
+              </div>
             </div>
           </section>
-          <section class="main__exs exs">
+          <section class="main__exs exs" id="exs">
             <div class="container">
               <h2 class="exs__title title"><span class="line"><span class="line__txt">Примеры работ</span></span></h2>
               <div class="exs__txt">Более&nbsp;<b>1000&nbsp;</b>+ пациентов остались довольны преображением своих улыбок.</div>
@@ -930,10 +938,10 @@
                   <div class="how__pic"><img class="how__pic-img" src="images/content/how/2.jpg" alt="lorem"/>
                   </div>
                 </div>
-              </div><a class="how__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">получить консультацию</span></span></a>
+              </div><a class="how__btn jsCall2 btn" href="/"><span class="btn__2"><span class="btn__3">получить консультацию</span></span></a>
             </div>
           </section>
-          <section class="main__prices prices">
+          <section class="main__prices prices" id="prices">
             <div class="container">
               <div class="row">
                 <div class="prices__wrap">
@@ -950,8 +958,10 @@
                           <div class="price__txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
                         </div>
                         <div class="price__right">
-                          <div class="price__old">8 000 руб.</div>
-                          <div class="price__new">4 000 руб.</div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                          <div class="price__prices">
+                            <div class="price__old">8 000 руб.</div>
+                            <div class="price__new">4 000 руб.</div>
+                          </div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
                         </div>
                       </div>
                     </div>
@@ -964,8 +974,10 @@
                           <div class="price__txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
                         </div>
                         <div class="price__right">
-                          <div class="price__old">8 000 руб.</div>
-                          <div class="price__new">4 000 руб.</div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                          <div class="price__prices">
+                            <div class="price__old">8 000 руб.</div>
+                            <div class="price__new">4 000 руб.</div>
+                          </div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
                         </div>
                       </div>
                     </div>
@@ -978,12 +990,14 @@
                           <div class="price__txt">Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.</div>
                         </div>
                         <div class="price__right">
-                          <div class="price__old">8 000 руб.</div>
-                          <div class="price__new">4 000 руб.</div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
+                          <div class="price__prices">
+                            <div class="price__old">8 000 руб.</div>
+                            <div class="price__new">4 000 руб.</div>
+                          </div><a class="price__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">записаться</span></span></a>
                         </div>
                       </div>
                     </div>
-                  </div><a class="prices__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">Смотреть прайс-лист</span></span></a>
+                  </div><a class="prices__btn btn" href="/" download><span class="btn__2"><span class="btn__3">Смотреть прайс-лист</span></span></a>
                   <div class="prices__img"><img class="prices__img-img" src="images/content/prices/img.png" alt="lorem"/>
                   </div>
                 </div>
@@ -1067,10 +1081,10 @@
                   <svg width="97" height="16" viewBox="0 0 97 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M96.7071 8.70711C97.0976 8.31658 97.0976 7.68342 96.7071 7.29289L90.3431 0.928932C89.9526 0.538408 89.3195 0.538408 88.9289 0.928932C88.5384 1.31946 88.5384 1.95262 88.9289 2.34315L94.5858 8L88.9289 13.6569C88.5384 14.0474 88.5384 14.6805 88.9289 15.0711C89.3195 15.4616 89.9526 15.4616 90.3431 15.0711L96.7071 8.70711ZM0 9L96 9V7L0 7L0 9Z" fill="#848484"/>
                   </svg></a>
-              </div><a class="resps__btn jsCall btn" href="/"><span class="btn__2"><span class="btn__3">Смотреть прайс-лист</span></span></a>
+              </div><a class="resps__btn btn" href="/" download><span class="btn__2"><span class="btn__3">Смотреть прайс-лист</span></span></a>
             </div>
           </section>
-          <section class="main__feed feed">
+          <section class="main__feed feed" id="feed">
             <div class="container feed__container">
               <div class="feed__left">
                 <div class="feed__points">
@@ -1141,26 +1155,28 @@
                       </g>
                   </svg>
                 </div>
-                <div class="feed__form form">
-                  <div class="form__title">Задайте свой вопрос</div>
-                  <div class="form__sub">Заполните форму или позвоните нам<br>по телефону&nbsp;<a href="tel:8(495)740-24-87">8 (495) 740-24-87</a></div>
-                  <div class="form__fields">
-                    <div class="form__field">
-                      <input class="form__input" type="text" name="name" placeholder="Введите Имя*">
+                <form class="feed__form form">
+                  <div class="form__wrap">
+                    <div class="form__title">Задайте свой вопрос</div>
+                    <div class="form__sub">Заполните форму или позвоните нам<br>по телефону&nbsp;<a href="tel:8(495)740-24-87">8 (495) 740-24-87</a></div>
+                    <div class="form__fields">
+                      <div class="form__field">
+                        <input class="form__input" type="text" name="name" placeholder="Введите Имя*">
+                      </div>
+                      <div class="form__field">
+                        <input class="form__input" type="tel" name="tel" placeholder="Введите телефон*">
+                      </div>
+                      <div class="form__field">
+                        <input class="form__input" type="email" name="email" placeholder="Введите e-mail">
+                      </div>
+                      <div class="form__field">
+                        <textarea class="form__input form__input_area" name="comment" placeholder="Комментарий"></textarea>
+                      </div>
                     </div>
-                    <div class="form__field">
-                      <input class="form__input" type="tel" name="tel" placeholder="Введите телефон*">
-                    </div>
-                    <div class="form__field">
-                      <input class="form__input" type="email" name="email" placeholder="Введите e-mail">
-                    </div>
-                    <div class="form__field">
-                      <textarea class="form__input form__input_area" name="comment" placeholder="Комментарий"></textarea>
-                    </div>
+                    <div class="form__policy">Заполняя данную форму Вы соглашаетесь&nbsp;<br><a href="/">с Политикой обработки персональных данных</a></div>
+                    <button class="form__submit btn" type="submit"><span class="btn__2"><span class="btn__3">Отправить</span></span></button>
                   </div>
-                  <div class="form__policy">Заполняя данную форму Вы соглашаетесь&nbsp;<br><a href="/">с Политикой обработки персональных данных</a></div>
-                  <button class="form__submit btn" type="submit"><span class="btn__2"><span class="btn__3">Отправить</span></span></button>
-                </div>
+                </form>
               </div>
               <div class="feed__right">
                 <h2 class="feed__title">Остались вопросы?<br>Задайте их главному врачу</h2>
@@ -1170,7 +1186,8 @@
             </div>
           </section>
           <section class="main__map map">
-            <div id="map"><img class="map__img" src="images/content/map.jpg" alt="lorem"/>
+            <div id="map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2637661dc0c281c2948a4b4d236a27b8a1aa9486f0f022985158ea8e265e58fa&amp;amp;source=constructor"></iframe>
             </div>
             <div class="container map__container">
               <div class="map__wrap">
@@ -1282,6 +1299,57 @@
         </div>
       </div>
     </div>
+    <div class="popup">
+      <div class="popup__wrapper"></div>
+    </div>
+    <template id="tmpl">
+      <form class="popup__form form callback"><a class="form__close jsClose" href="/"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z" fill="#BDBDBD"/>
+</svg></a>
+        <div class="form__wrap">
+          <div class="form__title">Заказать звонок</div>
+          <div class="form__txt">Укажите ваше имя и контактный номер и наши специалисты позвонят Вам</div>
+          <div class="form__fields">
+            <div class="form__field">
+              <input class="form__input form__input_2" type="text" name="name" placeholder="Введите Имя*">
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input_2" type="tel" name="tel" placeholder="Введите телефон*">
+            </div>
+          </div>
+          <div class="form__policy form__policy_g">Заполняя данную форму Вы соглашаетесь&nbsp;<br><a href="/">с Политикой обработки персональных данных</a></div>
+          <button class="form__btn" type="submit">Отправить</button>
+        </div>
+      </form>
+      <form class="popup__form form callback2"><a class="form__close jsClose" href="/"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z" fill="#BDBDBD"/>
+</svg></a>
+        <div class="form__wrap">
+          <div class="form__title">Получить консультацию</div>
+          <div class="form__fields">
+            <div class="form__field">
+              <input class="form__input form__input_2" type="text" name="name" placeholder="Введите Имя*">
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input_2" type="tel" name="tel" placeholder="Введите телефон*">
+            </div>
+            <div class="form__field">
+              <input class="form__input form__input_2" type="email" name="email" placeholder="Введите e-mail">
+            </div>
+            <div class="form__field">
+              <textarea class="form__input form__input_2 form__input_area" name="comment" placeholder="Комментарий"></textarea>
+            </div>
+          </div>
+          <div class="form__policy form__policy_g">Заполняя данную форму Вы соглашаетесь&nbsp;<br><a href="/">с Политикой обработки персональных данных</a></div>
+          <button class="form__btn" type="submit">Отправить</button>
+        </div>
+      </form>
+      <div class="success form__success">
+        <div class="form__title">Спасибо
+          <div class="form__sub">Ваша заявка принята в работу. Ожидайте звонка.</div>
+        </div>
+      </div>
+    </template>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
     <!-- Для изменений после верстки-->

@@ -3,10 +3,23 @@
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 160px;
+  @include lg-block{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-image: url("/images/content/rates/bg-t.jpg")
+  }
+  @include sm-block{
+    padding-top: 40px;
+    background: none;
+    padding-bottom: 0;
+  }
 
   &__title{
     text-align: center;
     margin-bottom: 25px;
+    @include lg-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__txt{
@@ -14,21 +27,49 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 100px;
-
-
     color: rgba(#1c1c1c,.9);
     font-size: 20px;
     font-weight: 700;
     line-height: lh(20,32.7);
+    @include lg-block{
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    @include sm-block{
+      font-size: 14px;
+    }
   }
 
   &__list{
     @include row-flex;
+    @include lg-block{
+      padding: 0 80px;
+    }
+    @include sm-block{
+      padding: 0;
+    }
   }
 
   &__item{
     @include col;
     @include size(4);
+    @include size-lg(8);
+    @include lg-block{
+      margin-bottom: 20px;
+    }
+    @include size-sm(12);
+  }
+
+  &__img{
+    display: none;
+    margin: 0 -10px;
+    @include sm-block{
+      display: block;
+    }
+
+    &-img{
+      width: 100%;
+    }
   }
 
 

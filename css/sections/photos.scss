@@ -3,6 +3,13 @@
   padding-top: 100px;
   padding-bottom: 100px;
   border-bottom: 1px solid #cccccc;
+  @include lg-block{
+    padding-top: 60px;
+  }
+  @include sm-block{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &__top{
     margin-bottom: 10px;
@@ -11,6 +18,12 @@
   &__title{
     text-align: center;
     margin-bottom: 90px;
+    @include lg-block{
+      margin-bottom: 60px;
+    }
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__row{
@@ -21,6 +34,10 @@
     @include col;
     @include size(12);
     position: relative;
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 20px;
+    }
 
   }
 
@@ -28,6 +45,10 @@
     @include col;
     @include size(12);
     position: relative;
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 15px;
+    }
 
   }
 
@@ -39,6 +60,13 @@
     line-height: 142%;
     position: relative;
     margin-bottom: 60px;
+    @include lg-block{
+      font-size: 16px;
+    }
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
     &:before{
       content: '';
       display: block;
@@ -63,6 +91,18 @@
       position: absolute;
       left: -25px;
       top: -25px;
+      @include lg-block{
+        width: 159px;
+        height: 176px;
+        left: -15px;
+        top: -15px;
+      }
+      @include sm-block{
+        width: 151px;
+        height: 168px;
+        top: -10px;
+        left: -10px;
+      }
     }
 
     &_r{
@@ -70,6 +110,21 @@
         left: initial;
         top: 72px;
         right: -25px;
+
+        @include lg-block{
+          width: 159px;
+          height: 176px;
+          top: 50px;
+          right: -15px;
+        }
+        @include sm-block{
+          @include sm-block{
+            width: 151px;
+            height: 168px;
+            bottom: -10px;
+            right: -10px;
+          }
+        }
 
       }
     }
@@ -91,11 +146,27 @@
     left: 50%;
     margin-left: -201px;
 
+    @include lg-block{
+      width: 240px;
+      padding: 15px 20px;
+      margin-left: -120px;
+      bottom: 50px;
+    }
+    @include sm-block{
+      bottom: 27%;
+    }
+
     &-txt{
       color: rgba(#1c1c1c,.9);
       font-size: 20px;
       font-weight: 500;
       line-height: 142%;
+      @include lg-block{
+        font-size: 16px;
+      }
+      @include sm-block{
+        text-align: center;
+      }
       &_y{
         background: #f2c94c;
       }
@@ -111,6 +182,32 @@
       padding: 10px;
       margin: 0 10px;
       flex-grow: 1;
+      @include lg-block{
+        padding: 0;
+        margin: 0 15px;
+      }
+      @include sm-block{
+        margin: 0;
+        margin-right: -10px;
+      }
+    }
+  }
+
+  &__slide{
+    @include sm-block{
+      width: 130px;
+    }
+  }
+
+  &__arr{
+    @include lg-block{
+        svg{
+          width: 27px;
+          height: 44px;
+        }
+    }
+    @include sm-block{
+      display: none;
     }
   }
 }
@@ -123,6 +220,9 @@
 
   &:hover{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    @include lg-block{
+        box-shadow: none;
+    }
   }
 
   &__img{

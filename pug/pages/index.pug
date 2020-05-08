@@ -30,7 +30,7 @@ block content
                                 source(srcset='images/content/banner/img-t.png' type='image/jpeg' media='(min-width:768.9px)')
                                 source(srcset='images/content/banner/img-m.png' type='image/jpeg' media='(min-width:320px)')
                                 img(src='images/content/banner/img.png' alt='lorem1')
-                            a(href='').banner__pr
+                            a(href='https://www.youtube.com/watch?v=_sI_Ps7JSEk' data-fancybox).banner__pr
                                 .
                                     <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118">
                                     <defs>
@@ -96,7 +96,7 @@ block content
                                 | г. Москва, метро Нахимовский проспект,
                                 | ул. Одесская, д.2, Бизнес-центр «Лотос», корпус С, 4 й этаж
 
-            a(href='').banner__angle
+            .banner__angle
                 +image('images/icons/angle-b.png','banner__angle-img')
 
         //- actions
@@ -136,7 +136,7 @@ block content
                                         li.action__item= j
 
 
-                a(href='/').actions__btn.btn
+                a(href='/').actions__btn.btn.jsCall2
                     span.btn__2
                         span.btn__3 получить консультацию
         //- advantges
@@ -151,7 +151,7 @@ block content
                             .advantage__title!= i
 
                 .advantages__block
-                    .advantages__name LOTOS
+                    .advantages__name#about LOTOS
                     .advantages__img
                         +image('images/content/advantages/img.png','advantages__img-img')
                     .advantages__txt
@@ -181,7 +181,7 @@ block content
                                         ul.promo__ul
                                             each j in i
                                                 li.promo__item= j
-                            a(href='/').promo__btn.btn.jsCall
+                            a(href='#feed').promo__btn.btn
                                 span.btn__2
                                     span.btn__3 задать вопрос главному врачу
                         .promo__right
@@ -200,7 +200,7 @@ block content
                                     +image('images/content/promo/img2.png','promo__img2-img')
                                 +image('images/content/promo/img.png','promo__img-img')
         //- certs
-        section.main__certs.certs
+        section.main__certs.certs#certs
             .container
                 .certs__top
                     .certs__quad
@@ -306,7 +306,7 @@ block content
                             </svg>
                     .certs__pag
         //- revs
-        section.main__revs.revs
+        section.main__revs.revs#revs
             .container
                 .revs__top
                     .revs__points.
@@ -419,7 +419,7 @@ block content
                                 <path fill="#f2c94c" d="M39.66 31.792L7 .52.66 6.99l26.25 24.802L.66 56.595 7 63.065z"/>
                             </svg>
         //- photos
-        section.main__photos.photos
+        section.main__photos.photos#photos
             .container
                 .photos__top
                     h2.photos__title.title
@@ -428,10 +428,12 @@ block content
                     .row.photos__row
                         .photos__left
                             .photos__li Высокотехнологичный стоматологический центр с человеческим подходом к проблемам своих пациентов и разумными ценами.
+                        .photos__right
+                            .photos__li Современное оборудование. Комфортабельная клиника с панормным видом на город. Профессиональный подход к работе.
+                        .photos__left
                             .photos__img
                                 +image('images/content/photos/img1.jpg','photos__img-img')
                         .photos__right
-                            .photos__li Современное оборудование. Комфортабельная клиника с панормным видом на город. Профессиональный подход к работе.
                             .photos__img.photos__img_r
                                 +image('images/content/photos/img2.jpg','photos__img-img')
                         .photos__txt
@@ -484,8 +486,10 @@ block content
                                         +icon('star','rate__star-svg')
                             else
                                 .rate__rate 4,8 из 5
+                .rates__img
+                    +image('images/content/rates/img.jpg','rates__img-img')
         //- exs
-        section.main__exs.exs
+        section.main__exs.exs#exs
             .container
                 h2.exs__title.title
                     span.line
@@ -545,11 +549,11 @@ block content
                     .how__item
                         .how__pic
                             +image('images/content/how/2.jpg','how__pic-img')
-                a(href='/').how__btn.jsCall.btn
+                a(href='/').how__btn.jsCall2.btn
                     span.btn__2
                         span.btn__3 получить консультацию
         //- prices
-        section.main__prices.prices
+        section.main__prices.prices#prices
             .container
                 .row
                     .prices__wrap
@@ -571,12 +575,13 @@ block content
                                             .price__title= i
                                             .price__txt Процедура, направленная на удаление зубного налета и зубного камня с рекомендуемой периодичностью в 4-6 месяцев. В нашей команде есть гигиенист. Он проводит чистку ультразвуковыми насадками и швейцарским порошком глицина air-flow. И полирует зубы полировочными пастами.
                                         .price__right
-                                            .price__old 8 000 руб.
-                                            .price__new 4 000 руб.
+                                            .price__prices
+                                                .price__old 8 000 руб.
+                                                .price__new 4 000 руб.
                                             a(href='/').price__btn.jsCall.btn
                                                 span.btn__2
                                                     span.btn__3 записаться
-                        a(href='/').prices__btn.jsCall.btn
+                        a(href='/' download=true).prices__btn.btn
                             span.btn__2
                                 span.btn__3 Смотреть прайс-лист
                         .prices__img
@@ -607,11 +612,11 @@ block content
                         <svg width="97" height="16" viewBox="0 0 97 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M96.7071 8.70711C97.0976 8.31658 97.0976 7.68342 96.7071 7.29289L90.3431 0.928932C89.9526 0.538408 89.3195 0.538408 88.9289 0.928932C88.5384 1.31946 88.5384 1.95262 88.9289 2.34315L94.5858 8L88.9289 13.6569C88.5384 14.0474 88.5384 14.6805 88.9289 15.0711C89.3195 15.4616 89.9526 15.4616 90.3431 15.0711L96.7071 8.70711ZM0 9L96 9V7L0 7L0 9Z" fill="#848484"/>
                         </svg>
-                a(href='/').resps__btn.jsCall.btn
+                a(href='/' download=true).resps__btn.btn
                     span.btn__2
                         span.btn__3 Смотреть прайс-лист
         //- feed
-        section.main__feed.feed
+        section.main__feed.feed#feed
             .container.feed__container
                 .feed__left
                     .feed__points.
@@ -681,29 +686,30 @@ block content
                                 </g>
                             </g>
                         </svg>
-                    .feed__form.form
-                        .form__title Задайте свой вопрос
-                        .form__sub
-                            |Заполните форму или позвоните нам
-                            br
-                            |по телефону&nbsp;
-                            a(href='tel:8(495)740-24-87') 8 (495) 740-24-87
-                        .form__fields
-                            .form__field
-                                input(type='text' name='name' placeholder='Введите Имя*').form__input
-                            .form__field
-                                input(type='tel' name='tel' placeholder='Введите телефон*').form__input
-                            .form__field
-                                input(type='email' name='email' placeholder='Введите e-mail').form__input
-                            .form__field
-                                textarea(name='comment' placeholder='Комментарий').form__input.form__input_area
-                        .form__policy
-                            | Заполняя данную форму Вы соглашаетесь&nbsp;
-                            br
-                            a(href='/') с Политикой обработки персональных данных
-                        button(type='submit').form__submit.btn
-                            span.btn__2
-                                span.btn__3 Отправить
+                    form.feed__form.form
+                        .form__wrap
+                            .form__title Задайте свой вопрос
+                            .form__sub
+                                |Заполните форму или позвоните нам
+                                br
+                                |по телефону&nbsp;
+                                a(href='tel:8(495)740-24-87') 8 (495) 740-24-87
+                            .form__fields
+                                .form__field
+                                    input(type='text' name='name' placeholder='Введите Имя*').form__input
+                                .form__field
+                                    input(type='tel' name='tel' placeholder='Введите телефон*').form__input
+                                .form__field
+                                    input(type='email' name='email' placeholder='Введите e-mail').form__input
+                                .form__field
+                                    textarea(name='comment' placeholder='Комментарий').form__input.form__input_area
+                            .form__policy
+                                | Заполняя данную форму Вы соглашаетесь&nbsp;
+                                br
+                                a(href='/') с Политикой обработки персональных данных
+                            button(type='submit').form__submit.btn
+                                span.btn__2
+                                    span.btn__3 Отправить
 
 
                 .feed__right
@@ -716,7 +722,7 @@ block content
         //- map
         section.main__map.map
             #map
-                +image('images/content/map.jpg','map__img')
+                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A2637661dc0c281c2948a4b4d236a27b8a1aa9486f0f022985158ea8e265e58fa&amp;source=constructor" )
             .container.map__container
                 .map__wrap
                     .row

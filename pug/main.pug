@@ -36,8 +36,8 @@ html(lang="ru")
                                 .time__title График работы
                                 .time__val Пн-Пт: с 09:00 до 20:00
 
-                        .header__col
-                            .header__tel
+                        .header__col.header__col_m
+                            .header__tel.header__tel_m
                                 a(href='tel:8(495)740-24-87').tel
                                     span.tel__val 8 (495) 740-24-87
                             .header__socials
@@ -139,6 +139,57 @@ html(lang="ru")
                     div
                     div
 
+
+
+
+        //- popup
+        .popup
+            .popup__wrapper
+
+        //- tmpl
+        template#tmpl
+            form.popup__form.form.callback
+                a(href='/').form__close.jsClose
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z" fill="#BDBDBD"/>
+                    </svg>
+                .form__wrap
+                    .form__title Заказать звонок
+                    .form__txt Укажите ваше имя и контактный номер и наши специалисты позвонят Вам
+                    .form__fields
+                        .form__field
+                            input(type='text' name='name' placeholder='Введите Имя*').form__input.form__input_2
+                        .form__field
+                            input(type='tel' name='tel' placeholder='Введите телефон*').form__input.form__input_2
+                    .form__policy.form__policy_g
+                        | Заполняя данную форму Вы соглашаетесь&nbsp;
+                        br
+                        a(href='/') с Политикой обработки персональных данных
+                    button(type='submit').form__btn Отправить
+            form.popup__form.form.callback2
+                a(href='/').form__close.jsClose
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z" fill="#BDBDBD"/>
+                    </svg>
+                .form__wrap
+                    .form__title Получить консультацию
+                    .form__fields
+                        .form__field
+                            input(type='text' name='name' placeholder='Введите Имя*').form__input.form__input_2
+                        .form__field
+                            input(type='tel' name='tel' placeholder='Введите телефон*').form__input.form__input_2
+                        .form__field
+                            input(type='email' name='email' placeholder='Введите e-mail').form__input.form__input_2
+                        .form__field
+                            textarea(name='comment' placeholder='Комментарий').form__input.form__input_2.form__input_area
+                    .form__policy.form__policy_g
+                        | Заполняя данную форму Вы соглашаетесь&nbsp;
+                        br
+                        a(href='/') с Политикой обработки персональных данных
+                    button(type='submit').form__btn Отправить
+            .success.form__success
+                .form__title Спасибо
+                    .form__sub Ваша заявка принята в работу. Ожидайте звонка.
 
 
         script(src='js/vendor.min.js')

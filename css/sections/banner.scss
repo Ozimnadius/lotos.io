@@ -5,6 +5,15 @@
   padding-bottom: 80px;
   position: relative;
   z-index: 1;
+  @include lg-block{
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+  @include sm-block{
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-color: #fff;
+  }
 
   .row{
     align-items: center;
@@ -14,11 +23,26 @@
     @include col;
     @include size(12);
     display: flex;
+    position: relative;
+    @include lg-block{
+      margin-right: -100px;
+      width: calc(50% + 80px);
+    }
+    @include size-sm(24);
+    @include sm-block{
+      order: 1;
+    }
   }
 
   &__right{
     @include col;
     @include size(12);
+    position: relative;
+    z-index: 2;
+    @include lg-block{
+      padding-top: 40px;
+    }
+    @include size-sm(24);
   }
 
   &__socials{
@@ -29,6 +53,15 @@
     margin-top: 110px;
     margin-left: -15px;
     margin-right: 10px;
+    @include lg-block{
+      position: absolute;
+      top: -80px;
+      bottom: 0;
+      left: 5px;
+    }
+    @include sm-block{
+      top: -10px;
+    }
 
     &-list{
       display: flex;
@@ -43,12 +76,19 @@
       font-weight: 500;
       white-space: nowrap;
       margin-top: 110px;
+      @include sm-block{
+        font-size: 16px;
+        margin-top: 70px;
+      }
     }
   }
 
   &__social{
     margin-bottom: 35px;
     @include tr;
+    @include sm-block{
+      margin-bottom: 15px;
+    }
 
     &:last-child{
       margin-bottom: 0;
@@ -56,6 +96,12 @@
 
     &:hover{
       opacity: .7;
+    }
+
+    svg{
+      @include sm-block{
+        max-height: 30px;
+      }
     }
   }
 
@@ -68,6 +114,12 @@
     bottom: 110px;
     left: 50%;
     transform: translateX(-50%);
+    @include lg-block{
+      bottom: 80px;
+    }
+    @include sm-block{
+      bottom: 40px;
+    }
 
     &:hover{
       .banner__pr-txt{
@@ -83,6 +135,12 @@
       margin-top: -59px;
       left: -60px;
       @include tr;
+      @include sm-block{
+        width: 80px;
+        height: 80px;
+        left: -40px;
+        margin-top: -40px;
+      }
     }
 
     &-txt{
@@ -96,12 +154,25 @@
       align-items: center;
       padding-left: 70px;
       @include tr;
+      @include sm-block{
+        width: 174px;
+        height: 40px;
+        padding-left: 50px;
+        font-size: 12px;
+      }
     }
   }
 
   &__title{
     font-size: 50px;
     margin-bottom: 30px;
+    @include lg-block{
+      font-size: 32px;
+    }
+    @include sm-block{
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
 
   &__txt{
@@ -110,6 +181,9 @@
     font-weight: 500;
     line-height: lh(18,25.56);
     margin-bottom: 15px;
+    @include lg-block{
+      font-size: 16px;
+    }
   }
 
   &__btns{
@@ -121,6 +195,16 @@
   &__btn{
     width: 304px;
     height: 96px;
+    @include sm-block{
+      width: 218px;
+      height: 66px;
+    }
+  }
+
+  &__points{
+    @include lg-block{
+      display: none;
+    }
   }
 
   &__addr{
@@ -138,6 +222,9 @@
       font-size: 18px;
       font-weight: 500;
       line-height: lh(18,25.56);
+      @include sm-block{
+        font-size: 12px;
+      }
     }
   }
 
@@ -146,6 +233,12 @@
     left: 50%;
     margin-left: -33.5px;
     bottom: 70px;
+    @include lg-block{
+      bottom: 40px;
+    }
+    @include sm-block{
+      display: none;
+    }
   }
 
 }

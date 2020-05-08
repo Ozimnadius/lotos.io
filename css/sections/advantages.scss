@@ -3,6 +3,12 @@
   background-size: cover;
   margin-top: -180px;
   padding-top: 300px;
+  @include lg-block{
+    padding-top: 250px;
+  }
+  @include sm-block{
+    padding-top: 230px;
+  }
 
   &__title{
     color: #ffffff;
@@ -12,6 +18,15 @@
     position: relative;
     padding-bottom: 50px;
     margin-bottom: 80px;
+    @include lg-block{
+      font-size: 32px;
+      margin-bottom: 60px;
+    }
+    @include sm-block{
+      font-size: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 40px;
+    }
 
     &:after{
       content: '';
@@ -23,6 +38,9 @@
       bottom: 0;
       left: 50%;
       margin-left: -128px;
+      @include sm-block{
+        height: 6px;
+      }
     }
   }
 
@@ -33,12 +51,22 @@
   &__item{
     @include col;
     @include size(6);
+    @include size-lg(12);
+    @include lg-block{
+      margin-bottom: 50px;
+    }
   }
 
   &__block{
     margin-top: -20px;
     position: relative;
     bottom: -210px;
+    @include lg-block{
+      bottom: -150px
+    }
+    @include sm-block{
+      bottom: -50px;
+    }
   }
 
   &__name{
@@ -54,6 +82,15 @@
     top: -170px;
     left: 0;
     right: 0;
+    @include lg-block{
+      font-size: 200px;
+      top: -120px;
+    }
+    @include sm-block{
+      font-size: 100px;
+      letter-spacing: 12.5px;
+      top: -60px;
+    }
   }
 
   &__img{
@@ -72,6 +109,9 @@
     bottom: 100px;
     left: 0;
     right: 0;
+    @include lg-block{
+      display: none;
+    }
 
     &_y{
       color: #f2c94c;
@@ -87,6 +127,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  &:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #F2C94C;
+    position: absolute;
+    z-index: 2;
+    right: -20px;
+    top: 50px;
+    @include sm-block{
+      display: none;
+    }
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    width: 134px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    right: -77px;
+    top: 60px;
+    @include sm-block{
+      display: none;
+    }
+  }
+
+  &:nth-child(2){
+    &:before,&:after{
+     @include lg-block{
+       display: none;
+     }
+    }
+  }
+
+  &:last-child{
+    &:before,&:after{
+      display: none;
+    }
+  }
 
   &__img{
     width: 93px;
@@ -101,5 +187,8 @@
     font-size: 20px;
     line-height: lh(20,22);
     text-align: center;
+    @include sm-block{
+      font-size: 16px;
+    }
   }
 }

@@ -4,16 +4,31 @@
   margin-top: -220px;
   border-bottom: 1px solid #cccccc;
   padding-top: 540px;
+  @include lg-block{
+    padding-top: 440px;
+  }
+  @include sm-block{
+    padding-top: 320px;
+  }
 
   &__top{
     position: relative;
     margin-bottom: 110px;
+    @include lg-block{
+      margin-bottom: 50px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__lamp{
     position: absolute;
     top: -100px;
     left: -450px;
+    @include lg-block{
+      display: none;
+    }
   }
 
   &__title{
@@ -24,12 +39,25 @@
     position: absolute;
     top: -80px;
     right: 70px;
+    @include lg-block{
+      right: 0px;
+    }
 
   }
 
   &__left{
     @include col;
     @include size(12);
+    @include size-lg(20);
+    @include shift-lg(2);
+    @include lg-block{
+      margin-bottom: 100px;
+    }
+    @include size-sm(24);
+    @include shift-sm(0);
+    @include sm-block{
+      margin-bottom: 20px;
+    }
   }
 
   &__right{
@@ -38,6 +66,11 @@
     padding-top: 40px;
     position: relative;
     padding-bottom: 40px;
+    @include size-lg(24);
+    @include sm-block{
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__list{
@@ -48,6 +81,10 @@
   &__col{
     @include col;
     @include size(12);
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 35px;
+    }
   }
 
   &__item{
@@ -76,6 +113,13 @@
   &__btn{
     width: 383px;
     height: 96px;
+    @include lg-block{
+      margin: 0 auto;
+    }
+    @include sm-block{
+      max-width: 324px;
+      height: 81px;
+    }
   }
 
   &__block{
@@ -109,6 +153,9 @@
       font-size: 18px;
       line-height: 142%;
       margin-bottom: 25px;
+      @include sm-block{
+        font-size: 16px;
+      }
     }
 
     &-txt{
@@ -123,11 +170,19 @@
     position: absolute;
     bottom: -5px;
     right: 60px;
+    @include sm-block{
+      position: static;
+      order: -1;
+      margin-bottom: -100px;
+    }
 
     &-img{
       position: relative;
       z-index: 2;
       max-width: initial;
+      @include sm-block{
+        max-width: 100%;
+      }
     }
   }
 

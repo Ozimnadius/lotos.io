@@ -20,6 +20,14 @@
     bottom: -2px;
     height: 23px;
     background-color: #f2c94c;
+    @include lg-block{
+      height: 15px;
+    }
+    @include sm-block{
+      left: -5px;
+      right: -5px;
+      height: 8px;
+    }
   }
 }
 
@@ -49,10 +57,19 @@
     background-color: #f2c94c;
     text-transform: uppercase;
     font-weight: 600;
+    @include lg-block{
+      font-size: 12px;
+    }
   }
 }
 
 .title{
   font-size: 50px;
   font-weight: 600;
+  @include lg-block{
+    font-size: 32px;
+  }
+  @include sm-block{
+    font-size: 20px;;
+  }
 }

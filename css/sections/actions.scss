@@ -3,10 +3,25 @@
   background-size: cover;
   padding-top: 125px;
   padding-bottom: 220px;
+  margin-top: -2px;
+  @include lg-block{
+    padding-top: 80px;
+    padding-bottom: 180px;
+  }
+  @include sm-block{
+    padding-top: 40px;
+    background-size: auto;
+    background: url("/images/content/actions/bg-m.png") center bottom no-repeat;
+    background-size: auto;
+    padding-bottom: 100px;
+  }
 
   &__title{
     text-align: center;
     margin-bottom: 65px;
+    @include lg-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__txt{
@@ -16,23 +31,39 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 90px;
+    @include lg-block{
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+    @include sm-block{
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
   }
 
   &__list{
     @include row-flex;
     margin-bottom: 45px;
+    @include sm-block{
+      margin-bottom: 10px;
+    }
   }
 
   &__item{
     @include col;
     @include size(12);
     margin-bottom: 45px;
+    @include size-sm(24);
   }
 
   &__btn{
     width: 383px;
     height: 96px;
     margin: 0 auto;
+    @include sm-block{
+      width: 287px;
+      height: 84px;
+    }
   }
 
 }
@@ -74,6 +105,13 @@
     padding: 40px 30px;
     overflow: hidden;
     margin-bottom: 45px;
+    @include lg-block{
+      margin-bottom: 20px;
+      padding: 30px;
+    }
+    @include sm-block{
+      margin-bottom: 40px;
+    }
   }
 
   &__content{
@@ -85,16 +123,25 @@
     line-height: lh(26,37);
     margin-bottom: 10px;
     min-height: 116px;
+    @include lg-block{
+      min-height: 50px;
+    }
 
     &-title{
       font-size: 26px;
       font-weight: 700;
+      @include lg-block{
+        font-size: 14px;
+      }
     }
 
     &-oldprice{
       font-size: 26px;
       font-weight: 500;
       color: #eb5757;
+      @include lg-block{
+        font-size: 14px;
+      }
     }
 
     &-price{
@@ -102,6 +149,9 @@
       font-size: 30px;
       font-weight: 700;
       white-space: nowrap;
+      @include lg-block{
+        font-size: 16px;
+      }
     }
   }
 
@@ -109,11 +159,19 @@
     color: #333333;
     font-size: 20px;
     margin-bottom: 30px;
+    @include lg-block{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__btn{
     width: 243px;
     height: 96px;
+    @include lg-block{
+      width: 149px;
+      height: 59px;
+    }
   }
 
   &__img{
@@ -125,6 +183,13 @@
     position: absolute;
     bottom: -125px;
     right: -95px;
+    @include lg-block{
+      width: 238px;
+      height: 238px;
+      bottom: -78px;
+      right: -58px;
+      border-width: 15px;
+    }
 
     &-img{
       display: block;
@@ -142,6 +207,9 @@
     margin-bottom: 10px;
     padding-left: 25px;
     position: relative;
+    @include lg-block{
+      font-size: 14px;
+    }
 
     &:last-child{
       margin-bottom: 0;

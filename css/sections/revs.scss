@@ -3,22 +3,56 @@
   padding-top: 120px;
   padding-bottom: 100px;
   border-bottom: 1px solid #cccccc;
+  @include lg-block{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
   &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 70px;
+    @include sm-block{
+      margin-bottom: 20px;
+    }
+  }
+
+  &__quad{
+    @include sm-block{
+      width: 55px;
+      align-self: flex-start;
+    }
+  }
+
+  &__points{
+    svg{
+      @include sm-block{
+        width: 76px;
+        height: 59px;
+      }
+    }
   }
 
   &__block {
     position: relative;
     margin-bottom: 55px;
+    @include lg-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__video {
     @include col;
     @include size(14);
     position: relative;
+    @include size-lg(16);
+    @include shift-lg(4);
+    @include lg-block{
+      margin-bottom: 40px;
+    }
+    @include size-sm(24);
+    @include shift-sm(0);
 
     &:before {
       content: '';
@@ -29,6 +63,18 @@
       position: absolute;
       top: -25px;
       left: -25px;
+      @include lg-block{
+        width: 188px;
+        height: 209px;
+        top: -15px;
+        left: -15px;
+      }
+      @include sm-block{
+        width: 125px;
+        height: 139px;
+        top: -10px;
+        left: -10px;
+      }
     }
 
     &:after {
@@ -40,6 +86,20 @@
       position: absolute;
       bottom: -25px;
       right: -25px;
+      @include lg-block{
+        @include lg-block{
+          width: 188px;
+          height: 209px;
+          bottom: -15px;
+          right: -15px;
+        }
+      }
+      @include sm-block{
+        width: 125px;
+        height: 139px;
+        bottom: -10px;
+        right: -10px;
+      }
     }
 
     &-play {
@@ -86,6 +146,19 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 45px;
     background: #ffffff url("/images/icons/q.svg") 30px 35px no-repeat;
+    @include size-lg(20);
+    @include shift-lg(2);
+    @include lg-block{
+      position: static;
+      transform: none;
+    }
+    @include size-sm(24);
+    @include shift-sm(0);
+    @include sm-block{
+      background-size: 90px 63px;
+      background-position: 20px 20px;
+      padding: 45px 25px;
+    }
 
     &-title{
       font-size: 24px;
@@ -113,6 +186,23 @@
     &-container{
       margin: 0 10px;
       padding: 10px;
+      @include sm-block{
+        padding: 0;
+        margin: 0;
+        margin-right: -10px;
+      }
+    }
+  }
+
+  &__arr{
+    @include sm-block{
+      display: none;
+    }
+  }
+
+  &__slide{
+    @include sm-block{
+      width: 143px;
     }
   }
 
@@ -122,6 +212,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   display: block;
+  @include sm-block{
+      box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
   &__img{
     padding-top: calc(204/217*100%);
@@ -138,6 +232,12 @@
       bottom: -7px;
       left: 50%;
       margin-left: -42px;
+      @include sm-block{
+        width: 56px;
+        height: 10px;
+        bottom: -5px;
+        margin-left: -28px;
+      }
     }
 
     &-img{
@@ -158,16 +258,25 @@
     align-items: center;
     padding: 20px 15px;
     text-align: center;
+    @include sm-block{
+      padding: 10px 5px;
+    }
   }
 
   &__name{
     font-size: 18px;
     margin-bottom: 5px;
+    @include sm-block{
+      font-size: 14px;
+    }
   }
 
   &__prof{
     font-size: 14px;
     color: rgba(#000,.5);
     line-height: 142%;
+    @include sm-block{
+      font-size: 12px;
+    }
   }
 }

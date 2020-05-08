@@ -3,12 +3,22 @@
   background-size: cover;
   padding-top: 130px;
   padding-bottom: 40px;
+  @include lg-block{
+    padding-top: 200px;
+  }
+  @include sm-block{
+    background-image: url("/images/content/footer/bg-m.jpg");
+    padding-top: 335px;
+  }
 
   &__top {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 40px;
+    @include sm-block{
+        flex-direction: column;
+    }
   }
 
   &__middle {
@@ -19,15 +29,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sm-block{
+        flex-direction: column;
+    }
   }
 
   &__logo {
     margin-right: 45px;
+    @include sm-block{
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__wes {
     display: flex;
     align-items: center;
+    @include sm-block{
+      margin-bottom: 40px;
+    }
 
     &-txt{
       color: rgba(#ffffff,.5);
@@ -58,10 +78,23 @@
   &__socials{
     margin-right: 35px;
     margin-left: auto;
+    @include sm-block{
+      margin: 0;
+      order: 1;
+    }
   }
 
   &__tels{
     display: flex;
+    @include lg-block{
+      margin-top: 30px;
+    }
+    @include sm-block{
+        flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+      margin-top: 0;
+    }
   }
 
   &__tel{
@@ -69,8 +102,13 @@
     font-size: 24px;
     font-weight: 600;
     margin-right: 35px;
+    @include sm-block{
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
     &:last-child{
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -79,6 +117,15 @@
     @include size(12);
     color: rgba(#ffffff,.5);
     line-height: lh(16,19);
+    @include size-sm(24);
+    @include sm-block{
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &__policy{
@@ -87,6 +134,11 @@
     padding: 13px 10px 13px 0;
     border-right: 1px solid #777777;
     margin-right: 10px;
+    @include sm-block{
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__copy{
