@@ -14,6 +14,44 @@
     padding-bottom: 0;
   }
 
+  &_2{
+    background-image: none;
+    padding-top: 0;
+    .rates{
+      &__title{
+        text-align: left;
+        @include lg-block{
+          text-align: center;
+        }
+      }
+      &__txt{
+        opacity: 0.9;
+        color: #1c1c1c;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 50px;
+        @include lg-block{
+          font-size: 16px;
+          text-align: center;
+        }
+        @include lg-block{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    @include lg-block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__title{
     text-align: center;
     margin-bottom: 25px;

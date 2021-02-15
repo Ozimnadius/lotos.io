@@ -1,0 +1,14 @@
+.third{
+
+  &__prices{
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(#000000,.2);
+    @include sm-block{
+      padding: 50px 0;
+    }
+    &_bg{
+      background: url("/images/content/second/prices/bg.svg") right 20px top no-repeat;
+      background-size: 91% auto;
+    }
+  }
+}

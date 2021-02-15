@@ -29,7 +29,21 @@
       height: 8px;
     }
   }
+
+  &_2{
+    &:after{
+      left: 0;
+      right: 0;
+
+      @include sm-block{
+        left: 0;
+        right: 0;
+      }
+    }
+  }
 }
+
+
 
 .btn{
   border-radius: 100px;

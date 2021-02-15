@@ -104,6 +104,44 @@ $(function () {
         },
     });
 
+
+    const spricesSliders = document.querySelectorAll('.sprices__slider');
+
+    spricesSliders.forEach(function (slider){
+
+        new Swiper(slider.querySelector('.sprices__container'), {
+            spaceBetween: 10,
+            slidesPerView: 1.5,
+            navigation: {
+                nextEl: slider.querySelector('.sprices__next'),
+                prevEl:  slider.querySelector('.sprices__prev'),
+            },
+            breakpoints: {
+                // when window width is >= 767.99px
+                767.99: {
+                    spaceBetween: 20,
+                    slidesPerView: 3,
+                },
+            },
+        });
+    });
+
+    // let spricesSlider = new Swiper('.sprices__container', {
+    //     spaceBetween: 10,
+    //     slidesPerView: 1.5,
+    //     navigation: {
+    //         nextEl: '.sprices__next',
+    //         prevEl: '.sprices__prev',
+    //     },
+    //     breakpoints: {
+    //         // when window width is >= 767.99px
+    //         767.99: {
+    //             spaceBetween: 20,
+    //             slidesPerView: 3,
+    //         },
+    //     },
+    // });
+
 });
 
 

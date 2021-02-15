@@ -1,0 +1,45 @@
+include ../common/_mixins
+include ../common/_settings
+
+.exs#exs
+    .container
+        h2.exs__title.title
+            span.line
+                span.line__txt Примеры работ
+        .exs__txt
+            | Более&nbsp;
+            b 1000&nbsp;
+            | + пациентов остались довольны преображением своих улыбок.
+
+        .exs__sws
+            a(href='' data-id=1).exs__sw.active Женская улыбка
+            a(href='' data-id=2).exs__sw Мужская улыбка
+        .exs__tabs
+            div(data-id=1).exs__tab.active
+                .row
+                    each i in [1,2,3]
+                        .exs__item
+                            .ex
+                                .juxtapose
+                                    +image('images/content/exs/1.jpg','ex__before')
+                                    +image('images/content/exs/2.jpg','ex__after')
+
+            div(data-id=2).exs__tab
+                .row
+                    each i in [1,2,3]
+                        .exs__item
+                            .ex
+                                .juxtapose
+                                    +image('images/content/exs/1.jpg','ex__before')
+                                    +image('images/content/exs/2.jpg','ex__after')
+        a(href='/').exs__btn.btn.jsCall
+            span.btn__2
+                span.btn__3 Хочу так же!
+
+
+
+
+
+
+
+

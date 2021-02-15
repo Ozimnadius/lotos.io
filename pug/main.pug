@@ -62,6 +62,139 @@ html(lang="ru")
             .page
                 block content
 
+            //- feed
+            section.feed#feed
+                .container.feed__container
+                    .feed__left
+                        .feed__points.
+                            <svg xmlns="http://www.w3.org/2000/svg" width="139" height="107" viewBox="0 0 139 107">
+                                <g>
+                                    <g opacity=".5">
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M11 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M11 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M11 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M11 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M43 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M43 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M43 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M43 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M75 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M75 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M75 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M75 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M107 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M107 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M107 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M107 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M139 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M139 37.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M139 69.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                        <g opacity=".5">
+                                            <path fill="#c4c4c4" d="M139 101.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        form.feed__form.form
+                            .form__wrap
+                                .form__title Задайте свой вопрос
+                                .form__sub
+                                    |Заполните форму или позвоните нам
+                                    br
+                                    |по телефону&nbsp;
+                                    a(href='tel:8(495)740-24-87') 8 (495) 740-24-87
+                                .form__fields
+                                    .form__field
+                                        input(type='text' name='name' placeholder='Введите Имя*').form__input
+                                    .form__field
+                                        input(type='tel' name='tel' placeholder='Введите телефон*').form__input
+                                    .form__field
+                                        input(type='email' name='email' placeholder='Введите e-mail').form__input
+                                    .form__field
+                                        textarea(name='comment' placeholder='Комментарий').form__input.form__input_area
+                                .form__policy
+                                    | Заполняя данную форму Вы соглашаетесь&nbsp;
+                                    br
+                                    a(href='/') с Политикой обработки персональных данных
+                                button(type='submit').form__submit.btn
+                                    span.btn__2
+                                        span.btn__3 Отправить
+
+
+                    .feed__right
+                        h2.feed__title
+                            | Остались вопросы?
+                            br
+                            | Задайте их главному врачу
+                        .feed__quad
+                            +image('images/icons/quad.png','feed__quad-img')
+            //- map
+            section.map
+                #map
+                    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A2637661dc0c281c2948a4b4d236a27b8a1aa9486f0f022985158ea8e265e58fa&amp;source=constructor" )
+                .container.map__container
+                    .map__wrap
+                        .row
+                            .map__left
+                                .map__addr
+                                    .map__addr-img.
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="35" viewBox="0 0 23 35">
+                                            <path fill="#f2c94c"
+                                                  d="M23 11.5a11.52 11.52 0 0 1-1.377 5.46l-9.494 17.17a.718.718 0 0 1-1.258 0l-9.49-17.165A11.521 11.521 0 0 1 0 11.5C0 5.159 5.159 0 11.5 0S23 5.159 23 11.5zm-5.75 0c0-3.17-2.58-5.75-5.75-5.75S5.75 8.33 5.75 11.5s2.58 5.75 5.75 5.75 5.75-2.58 5.75-5.75z"/>
+                                        </svg>
+                                    .map__addr-txt
+                                        | г. Москва, метро Нахимовский проспект,
+                                        br
+                                        | ул. Одесская, д.2, Бизнес-центр «Лотос», корпус С, 4 й этаж
+                            .map__right
+                                .map__time
+                                    .map__time-img.
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 0C9.86941 0 0 9.86941 0 22C0 34.1306 9.86941 44 22 44C34.1306 44 44 34.1306 44 22C44 9.86941 34.1306 0 22 0ZM22 41.25C11.3854 41.25 2.75001 32.6146 2.75001 22C2.75001 11.3854 11.3854 2.75001 22 2.75001C32.6146 2.75001 41.25 11.3854 41.25 22C41.25 32.6146 32.6146 41.25 22 41.25Z" fill="#F2C94C"/>
+                                        <path d="M23.375 8.25H20.625V22.5693L29.2778 31.2221L31.2222 29.2778L23.375 21.4306V8.25Z" fill="#F2C94C"/>
+                                        </svg>
+                                    .map__time-txt
+                                        | График работы
+                                        br
+                                        b Пн-Пт: с 09:00 до 20:00
             //- footer
             footer.footer
                 .container

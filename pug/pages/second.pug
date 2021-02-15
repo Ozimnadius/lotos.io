@@ -1,0 +1,180 @@
+extends ../main
+
+block variables
+    - var title = 'Главная'
+
+block content
+    main.second
+        //- banner
+        section.second__banner.banner.banner_2
+            .container
+                .banner__bread
+                    .bread
+                        a(href='/').bread__item Главная
+                        span.bread__sep
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.653687 10.3493C0.4674 10.1667 0.450465 9.88093 0.602881 9.67955L0.653687 9.62186L4.85839 5.5L0.653687 1.37814C0.4674 1.19552 0.450465 0.909739 0.602881 0.70836L0.653687 0.650665C0.839974 0.468041 1.13148 0.451438 1.3369 0.600859L1.39575 0.650665L5.97131 5.13626C6.1576 5.31889 6.17454 5.60466 6.02212 5.80604L5.97131 5.86374L1.39575 10.3493C1.19084 10.5502 0.858603 10.5502 0.653687 10.3493Z" fill="black" stroke="black" stroke-width="0.5"/>
+                            </svg>
+                        span.bread__item.active Имплантация
+                .row
+                    .banner__left
+                        .banner__content
+                            h2.banner__title
+                                span.line.line_2
+                                    span.line__txt Имплантация
+                                |
+                                | зубов
+                                br
+                                | c гарантией
+                            ul.banner__ul
+                                li Цены под ключ! Финальная стоимость сразу на сайте.
+                                li Без скрытых платежей. 100 % совпадение на сайте и в клинике.
+                                li Пожизненная гарантия на импланты и до 15 лет на услуги.
+                            .banner__btns
+                                a(href='/').banner__btn.btn.jsCall
+                                    span.banner__btn-2.btn__2
+                                        span.banner__btn-3.btn__3 Записаться на прием
+                    .banner__right
+                        picture.banner__picture
+                            source(srcset='images/content/banner/img1.png' type='image/jpeg' media='(min-width:1199.9px)')
+                            source(srcset='images/content/banner/img1-t.png' type='image/jpeg' media='(min-width:768.9px)')
+                            source(srcset='images/content/banner/img1-m.png' type='image/jpeg' media='(min-width:320px)')
+                            img(src='images/content/banner/img1.png' alt='lorem1')
+            .banner__angle
+                +image('images/icons/angle-b.png','banner__angle-img')
+        //- prices
+        section.second__prices
+            .sprices
+                .container
+                    h2.title.sprices__title
+                        span.line
+                            span.line__txt Стоимость имплантации
+                        br
+                        | «под ключ» в Москве
+                    .sprices__slider
+                        button(type='button').sprices__arr.sprices__prev
+                            <svg width="39" height="63" viewBox="0 0 39 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.7339e-06 31.7278L32.66 63L39 56.5306L12.75 31.7278L39 6.92501L32.66 0.455566L2.7339e-06 31.7278Z" fill="#F2C94C"/>
+                            </svg>
+                        .sprices__container.swiper-container
+                            .swiper-wrapper
+                                each i in [1,2,3,4,5,6]
+                                    .swiper-slide.sprice
+                                        .sprice__top
+                                            .sprice__country Южная Корея
+                                            .sprice__title
+                                                | Корейский имплант
+                                                br
+                                                | MegaGen AnyOne
+                                        .sprice__free КОНСУЛЬТАЦИЯ ВРАЧА БЕСПЛАТНО
+                                        .sprice__bottom
+                                            .sprice__list
+                                                each i in spriceList
+                                                    .sprice__item
+                                                        .sprice__name= i.title
+                                                        if i.price
+                                                            .sprice__price= i.price
+                                                        else
+                                                            .sprice__plus
+                                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M15.47 9.85299H9.588V15.531H5.882V9.85299H0V6.18099H5.848V0.468994H9.588V6.18099H15.47V9.85299Z" fill="#F2C94C"/>
+                                                                </svg>
+                                            .sprice__total
+                                                .sptotal
+                                                    .sptotal__left
+                                                        .sptotal__title ИТОГО:
+                                                        .sptotal__txt
+                                                            | Цена за 1 имплантат с установкой
+                                                            br
+                                                            span.sptotal__txt_green (Временная коронка и пластика десны в подарок)
+                                                    .sptotal__right
+                                                        .sptotal__txt
+                                                            span.sptotal__txt_green под ключ
+                                                        .sptotal__price 38 000 ₽
+
+                                            .sprice__sub
+                                                | Приглашаем на бесплатную
+                                                br
+                                                | диагностику и консультацию
+                                            a(href='/').sprice__btn.btn.jsCall
+                                                span.sprice__btn-2.btn__2
+                                                    span.sprice__btn-3.btn__3 записаться
+
+                        button(type='button').sprices__arr.sprices__next
+                            <svg width="39" height="63" viewBox="0 0 39 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39 31.2722L6.34 0L0 6.46944L26.25 31.2722L0 56.075L6.34 62.5444L39 31.2722Z" fill="#F2C94C"/>
+                            </svg>
+        //- exs
+        section.second__exs
+            include ../blocks/exs
+        //- faq
+        section.second__faq
+            .faq
+                .container
+                    h2.title.faq__title
+                        | Ответы на вопросы
+                        br
+                        span.line
+                            span.line__txt по имплантации
+                    .row
+                        each i in [1,2]
+                            a(href='https://www.youtube.com/watch?v=_sI_Ps7JSEk' data-fancybox).faq__item
+                                img(src="https://img.youtube.com/vi/_sI_Ps7JSEk/hqdefault.jpg" alt="lorem")
+                                span.faq__btn
+                                    <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.3" cx="53" cy="53" r="53" fill="white"/>
+                                    <circle opacity="0.4" cx="53.0001" cy="53.0001" r="41.9254" fill="white"/>
+                                    <circle cx="53.0002" cy="52.9999" r="30.8507" fill="#F2C94C"/>
+                                    <path d="M63.2837 52.9999L47.8583 61.9057L47.8583 44.094L63.2837 52.9999Z" fill="white"/>
+                                    </svg>
+
+                                span.faq__desc
+                                    span.faq__name Ацамаз Бекоев
+                                    span.faq__prof Врач - стоматолог / Опыт работы: 7 лет
+                                    span.faq__sub
+                                        |Узнайте всё об имплантации
+                                        br
+                                        |за 2 минуты
+        //- revs
+        section.second__revs
+            include ../blocks/revs
+        section.second__rates
+            .rates.rates_2
+                .container
+                    .rates__top
+                        h2.rates__title.title
+                            |Безупречная
+                            br
+                            span.line
+                                span.line__txt репутация
+                        .rates__txt Репутация клиники и стоматологов — важный критерий при выборе места лечения. Нам нечего скрывать! Узнайте, что думают пациенты о «Lotos» на популярных интернет-порталах.
+                    .rates__list
+                        each i,x in ratesList
+                            .rates__item.rate
+                                .rate__img
+                                    +image('images/content/rates/' + (x + 1) + '.png','rate__img-img')
+                                .rate__txt Рейтинг
+                                if i.stars
+                                    .rate__stars
+                                        .rate__star
+                                            +icon('star','rate__star-svg active')
+                                        .rate__star
+                                            +icon('star','rate__star-svg active')
+                                        .rate__star
+                                            +icon('star','rate__star-svg active')
+                                        .rate__star
+                                            +icon('star','rate__star-svg active')
+                                        .rate__star
+                                            +icon('star','rate__star-svg')
+                                else
+                                    .rate__rate 4,8 из 5
+
+
+
+
+
+
+
+
+
+
