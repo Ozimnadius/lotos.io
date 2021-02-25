@@ -549,6 +549,8 @@ input, textarea {
   z-index: 1;
 }
 .banner {
+  background: #f9f9f9 url("/images/content/banner/bg.png") center bottom no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 1;
 }
@@ -558,8 +560,6 @@ input, textarea {
   }
 }
 .banner .container {
-  background: #f9f9f9 url("/images/content/banner/bg.png") center bottom no-repeat;
-  background-size: cover;
   min-height: 920px;
   padding-top: 170px;
   padding-bottom: 80px;
@@ -583,7 +583,8 @@ input, textarea {
     min-height: auto;
     padding-top: 120px;
     padding-bottom: 30px;
-    background-color: #fff;
+    background: #fff url("/images/content/banner/bg.png") center bottom no-repeat;
+    background-size: cover;
   }
 }
 .banner_2 {
