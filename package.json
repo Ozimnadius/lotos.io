@@ -35,7 +35,7 @@
     "juxtaposejs": "^1.1.6",
     "normalize.css": "^8.0.1",
     "smart-grid": "^2.1.2",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "zurb-twentytwenty": "^0.1.1"
   }
 }
